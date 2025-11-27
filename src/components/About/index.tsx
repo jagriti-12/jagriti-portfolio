@@ -16,7 +16,7 @@ export default function AboutSection() {
                     viewport={{ once: true }}
                     className="flex justify-center"
                 >
-                    <div className="w-64 h-64 rounded-3xl overflow-hidden shadow-glow border border-white/10">
+                    <div className="w-90 h-90 rounded-3xl overflow-hidden shadow-glow border border-white/10">
                         <img
                             src="/images/profile/profile.jpg" // You will add your image in this path
                             alt="Jagriti"
