@@ -8,7 +8,7 @@ export default function Hero() {
             <div className="mx-auto max-w-6xl px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
                 <div>
                     <motion.h1 initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.05 }} className="text-4xl md:text-6xl font-extrabold leading-tight">
-                        Hi, I’m <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">Jagriti Sachdeva</span>
+                        Hi, I’m <span className="bg-clip-text text-yellow-200 bg-gradient-to-r from-primary to-accent">Jagriti</span>
                     </motion.h1>
 
                     <motion.p initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.15 }} className="mt-4 text-lg text-slate-300 max-w-xl">
