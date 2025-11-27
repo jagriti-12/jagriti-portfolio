@@ -8,6 +8,7 @@ import ExperienceSection from "@/components/Experience";
 import EducationSection from "@/components/Education";
 import CertificationsSection from "@/components/Certification";
 import ResumeSection from "@/components/Resume";
+import ContactSection from "@/components/Contact";
 
 
 
@@ -25,7 +26,7 @@ export default function Home() {
         <EducationSection />
         <CertificationsSection />
         <ResumeSection />
-        <section id="contact" className="min-h-screen flex items-center justify-center">Contact (work in progress)</section>
+        <ContactSection />
       </main>
 
       <ChatWidget />
