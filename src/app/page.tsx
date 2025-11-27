@@ -4,6 +4,7 @@ import ChatWidget from "@/components/ChatWidget/ChatWidget";
 import ProjectsSection from "@/components/Projects";
 import AboutSection from "@/components/About";
 import TechSection from "@/components/Tech";
+import ExperienceSection from "@/components/Experience";
 
 
 
@@ -17,7 +18,7 @@ export default function Home() {
         <AboutSection />
         <ProjectsSection />
         <TechSection />
-        <section id="experience" className="min-h-screen flex items-center justify-center">Experience (work in progress)</section>
+        <ExperienceSection />
         <section id="certifications" className="min-h-screen flex items-center justify-center">Certifications (work in progress)</section>
         <section id="resume" className="min-h-screen flex items-center justify-center">Resume (work in progress)</section>
         <section id="contact" className="min-h-screen flex items-center justify-center">Contact (work in progress)</section>
