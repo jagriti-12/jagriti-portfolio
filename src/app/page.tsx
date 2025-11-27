@@ -5,6 +5,8 @@ import ProjectsSection from "@/components/Projects";
 import AboutSection from "@/components/About";
 import TechSection from "@/components/Tech";
 import ExperienceSection from "@/components/Experience";
+import EducationSection from "@/components/Education";
+import CertificationsSection from "@/components/Certification";
 
 
 
@@ -19,7 +21,8 @@ export default function Home() {
         <ProjectsSection />
         <TechSection />
         <ExperienceSection />
-        <section id="certifications" className="min-h-screen flex items-center justify-center">Certifications (work in progress)</section>
+        <EducationSection />
+        <CertificationsSection />
         <section id="resume" className="min-h-screen flex items-center justify-center">Resume (work in progress)</section>
         <section id="contact" className="min-h-screen flex items-center justify-center">Contact (work in progress)</section>
       </main>
