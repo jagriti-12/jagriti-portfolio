@@ -1,9 +1,15 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef  } from "react";
 import ChatBubbleIcon from "./ChatBubble";
+import { v4 as uuidv4 } from "uuid";
+// install uuid: npm i uuid
+
+
 
 export default function ChatWidget() {
+    const sessionIdRef = useRef<string>(uuidv4());
+
     const [open, setOpen] = useState(false);
     const [messages, setMessages] = useState<{ from: "user" | "bot"; text: string }[]>([
         { from: "bot", text: "Hi — I am Jagriti AI. How can I help you today?" },
@@ -16,17 +22,39 @@ export default function ChatWidget() {
         return () => window.removeEventListener("openChat", handler);
     }, []);
 
-    function send() {
+    async function send() {
         if (!value.trim()) return;
-        setMessages((m) => [...m, { from: "user", text: value }]);
+        const userMessage = value;
+        setMessages((m) => [...m, { from: "user", text: userMessage }]);
         setValue("");
-        // mock bot reply
-        setTimeout(() => {
-            setMessages((m) => [...m, { from: "bot", text: "Thanks — I can show you resumes, projects, or answer questions." }]);
-        }, 700);
-        // analytics placeholder
-        console.info("analytics: chat_message_sent");
+
+        // build messages payload for server
+        const payload = {
+            sessionId: sessionIdRef.current, // create a UUID ref below
+            messages: [{ role: "user", content: userMessage }],
+            // roleContext: window.__JAGRITI_ROLE_CONTEXT || null, // optional global role context
+            // projectContext: window.__JAGRITI_PROJECT_CONTEXT || null
+        };
+
+        try {
+            const res = await fetch("/api/chat", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload)
+            });
+            const data = await res.json();
+
+            if (data?.assistant) {
+                setMessages((m) => [...m, { from: "bot", text: data.assistant }]);
+            } else {
+                setMessages((m) => [...m, { from: "bot", text: "Sorry — no reply." }]);
+            }
+        } catch (err) {
+            console.error("Chat send error", err);
+            setMessages((m) => [...m, { from: "bot", text: "Network error — try again." }]);
+        }
     }
+
 
     return (
         <>
