@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useRef  } from "react";
+import { useEffect, useState, useRef } from "react";
 import ChatBubbleIcon from "./ChatBubble";
 import { v4 as uuidv4 } from "uuid";
 // install uuid: npm i uuid
@@ -32,7 +32,7 @@ export default function ChatWidget() {
         const payload = {
             sessionId: sessionIdRef.current, // create a UUID ref below
             messages: [{ role: "user", content: userMessage }],
-            context: window.__JAGRITI_CONTEXT 
+            context: window.__JAGRITI_CONTEXT
         };
 
         try {
@@ -79,6 +79,13 @@ export default function ChatWidget() {
                                 </div>
                             ))}
                         </div>
+                        <div className="flex mr-2 gap-2 text-xs pt-2">
+                            <button onClick={() => setValue("show me projects")} className="px-2 py-1 bg-white/10 rounded">Projects</button>
+                            <button onClick={() => setValue("show skills")} className="px-2 py-1 bg-white/10 rounded">Skills</button>
+                            <button onClick={() => setValue("show experience")} className="px-2 py-1 bg-white/10 rounded">Experience</button>
+                            <button onClick={() => setValue("show resume options")} className="px-2 py-1 bg-white/10 rounded">Resumes</button>
+                        </div>
+
 
                         <div className="px-3 py-2 border-t border-white/6 flex gap-2">
                             <input value={value} onChange={(e) => setValue(e.target.value)} placeholder="Ask about roles, projects..." className="flex-1 bg-transparent outline-none text-sm" />
