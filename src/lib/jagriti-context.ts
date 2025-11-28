@@ -42,7 +42,7 @@ export const JAGRITI_CONTEXT = {
         }
     ],
 
-    education: ["B.Tech CSE – Chandigarh University with 8.37 CGPA. She also outperformes her activity lkike being a CR, Volunteer president vice president of clubs and university level societuy"],
+    education: ["B.Tech CSE – Chandigarh University with 8.37 CGPA"],
 
     resumes: [
         { role: "Frontend Developer", file: "/resumes/frontend.pdf" },
