@@ -29,6 +29,12 @@ export default function Hero() {
                         >
                             Chat with Jagriti AI
                         </button>
+                        <button
+                            onClick={() => window.dispatchEvent(new Event("openChat"))}
+                            className="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/80 transition"
+                        >
+                            Ask Jagriti’s AI →
+                        </button>
                     </div>
 
                     <div className="mt-8 flex flex-wrap gap-3">

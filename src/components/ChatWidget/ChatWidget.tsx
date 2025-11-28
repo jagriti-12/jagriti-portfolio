@@ -79,12 +79,14 @@ export default function ChatWidget() {
                                 </div>
                             ))}
                         </div>
-                        <div className="flex mr-2 gap-2 text-xs pt-2">
-                            <button onClick={() => setValue("show me projects")} className="px-2 py-1 bg-white/10 rounded">Projects</button>
-                            <button onClick={() => setValue("show skills")} className="px-2 py-1 bg-white/10 rounded">Skills</button>
-                            <button onClick={() => setValue("show experience")} className="px-2 py-1 bg-white/10 rounded">Experience</button>
-                            <button onClick={() => setValue("show resume options")} className="px-2 py-1 bg-white/10 rounded">Resumes</button>
+                        <div className="flex gap-2 flex-wrap mt-2 text-[11px] text-white/80">
+                            <button className="px-2 py-1 bg-white/10 rounded" onClick={() => setValue("show projects")}>Projects</button>
+                            <button className="px-2 py-1 bg-white/10 rounded" onClick={() => setValue("show skills")}>Skills</button>
+                            <button className="px-2 py-1 bg-white/10 rounded" onClick={() => setValue("show experience")}>Experience</button>
+                            <button className="px-2 py-1 bg-white/10 rounded" onClick={() => setValue("show freelance projects")}>Freelance</button>
+                            <button className="px-2 py-1 bg-white/10 rounded" onClick={() => setValue("show resumes")}>Resumes</button>
                         </div>
+
 
 
                         <div className="px-3 py-2 border-t border-white/6 flex gap-2">

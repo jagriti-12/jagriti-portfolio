@@ -8,57 +8,57 @@ export async function POST(req: NextRequest) {
         const body = await req.json();
         const { messages, context, sessionId } = body;
 
-        function detectRolePreference(message) {
-            message = message.toLowerCase();
-            if (message.includes("frontend")) return "frontend";
-            if (message.includes("ai") || message.includes("ml")) return "ai";
-            if (message.includes("writer") || message.includes("technical writer"))
+        // ROLE DETECTION
+        function detectRole(message: string) {
+            const m = message.toLowerCase();
+            if (m.includes("frontend") || m.includes("react") || m.includes("ui"))
+                return "frontend";
+            if (m.includes("ai") || m.includes("ml") || m.includes("deep learning"))
+                return "ai";
+            if (m.includes("writer") || m.includes("technical writing"))
                 return "writer";
-            return null;
+            if (m.includes("research") || m.includes("paper"))
+                return "researcher";
+            return "general";
         }
 
-        const rolePreference = detectRolePreference(messages[0].content);
+        const detectedRole = detectRole(messages[0].content);
 
-
+        // SYSTEM MESSAGE (CLEANED)
         const fullMessages = [
             {
                 role: "system",
                 content: `
-                You are “Jagriti AI” — a professional AI assistant built to help recruiters evaluate Jagriti Sachdeva.
+You are “Jagriti AI”, a professional recruiter assistant for Jagriti Sachdeva.
 
-STRICT RULES:
-1. No hallucinations. Only use context provided.
-2. If something isn’t in context → say: “This information isn’t available.”
-3. Answers must be short, clear, recruiter-friendly (2–4 lines).
-4. Use bullet points for:
-   - Skills
-   - Projects
-   - Experience
-   - Freelance work
-   - Resumes
-5. NEVER invent Django, cybersecurity, cloud engineering, or random roles.
-6. DEFAULT TO HER FRONTEND ROLE unless user asks otherwise.
-7. If user intent is detected (example: “frontend”, “AI role”, “writer role”)
-   → use role-based filtering.
-8. Maintain a professional tone with occasional friendliness.
+STYLE RULES:
+• Keep answers short (1–3 sentences max)
+• Use bullet points for skills, projects, experience, resumes
+• Always stay factual to the context
+• No long paragraphs
+• No invented skills, projects, or certifications
+• If the answer is unavailable → reply: “This information isn’t available.”
 
-FEATURES YOU SUPPORT:
-• Role-based response mode  
-• Project summaries  
-• Skill breakdown  
-• Resume suggestions  
-• Experience summaries  
-• Freelance project listing  
-• Education details  
-• Session memory  
-Detected user role intent: ${rolePreference || "none"}
-                Context:
-                ${JSON.stringify(context)}
+BEHAVIOR RULES:
+• Detect the recruiter's intent (frontend, ai/ml, writer, researcher)
+• Adapt the answer accordingly
+• Recommend the best resume based on detected role
+
+For insights requests:
+• Summarize strengths in 3 bullets
+• Highlight impact of projects
+• Connect skills to real hiring needs
+
+Detected recruiter intent: ${detectedRole}
+
+CONTEXT:
+${JSON.stringify(context)}
         `
             },
             ...messages
         ];
 
+        // CALL GROQ API
         const completion = await groq.chat.completions.create({
             model: "llama-3.1-8b-instant",
             messages: fullMessages,
@@ -66,15 +66,34 @@ Detected user role intent: ${rolePreference || "none"}
             temperature: 0.2,
         });
 
-        const assistant =
+        let assistant =
             completion.choices?.[0]?.message?.content ||
             "Sorry, I couldn't generate a response.";
 
-        // const cleaned = assistant
-        //     .replace(/\n{3,}/g, "\n\n")
-        //     .slice(0, 800); // hard limit to prevent essays
+        // RESUME RECOMMENDATION
+        let recommendation = "";
+        if (detectedRole === "frontend") {
+            recommendation = "Recommended resume: Frontend Developer.";
+        } else if (detectedRole === "ai") {
+            recommendation = "Recommended resume: AI/ML Engineer.";
+        } else if (detectedRole === "writer") {
+            recommendation = "Recommended resume: Technical Writer.";
+        } else if (detectedRole === "researcher") {
+            recommendation = "Recommended resume: Researcher.";
+        } else {
+            recommendation = "You can view all resumes in the Resume section.";
+        }
 
-        return NextResponse.json({ assistant });
+        const enhanced = `${assistant}\n\n${recommendation}`;
+
+        // CLEAN OUTPUT
+        const cleaned = enhanced
+            .replace(/\n{3,}/g, "\n\n")
+            .trim()
+            .slice(0, 700);
+
+        return NextResponse.json({ assistant: cleaned });
+
     } catch (err: any) {
         console.error("Groq API Error:", err);
         return NextResponse.json(
