@@ -19,16 +19,6 @@ export default function Hero() {
                         <a href="#resume" className="px-5 py-3 rounded-2xl bg-gradient-to-r from-primary to-accent text-white font-medium shadow-lg hover:scale-105 transition">
                             View Resumes
                         </a>
-
-                        <button
-                            onClick={() => {
-                                const ev = new CustomEvent("openChat");
-                                window.dispatchEvent(ev);
-                            }}
-                            className="px-5 py-3 rounded-2xl border border-white/8 text-sm font-medium hover:bg-white/3 transition"
-                        >
-                            Chat with Jagriti AI
-                        </button>
                         <button
                             onClick={() => window.dispatchEvent(new Event("openChat"))}
                             className="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/80 transition"

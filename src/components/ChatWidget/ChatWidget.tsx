@@ -3,17 +3,15 @@
 import { useEffect, useState, useRef } from "react";
 import ChatBubbleIcon from "./ChatBubble";
 import { v4 as uuidv4 } from "uuid";
-// install uuid: npm i uuid
-
-
 
 export default function ChatWidget() {
     const sessionIdRef = useRef<string>(uuidv4());
 
     const [open, setOpen] = useState(false);
-    const [messages, setMessages] = useState<{ from: "user" | "bot"; text: string }[]>([
-        { from: "bot", text: "Hi — I am Jagriti's AI. How can I help you today?" },
-    ]);
+    const [messages, setMessages] = useState<
+        { from: "user" | "bot"; text: string }[]
+    >([{ from: "bot", text: "Hi — I am Jagriti's AI. How can I help you today?" }]);
+
     const [value, setValue] = useState("");
 
     useEffect(() => {
@@ -22,25 +20,26 @@ export default function ChatWidget() {
         return () => window.removeEventListener("openChat", handler);
     }, []);
 
-    async function send() {
-        if (!value.trim()) return;
-        const userMessage = value;
-        setMessages((m) => [...m, { from: "user", text: userMessage }]);
+    // --- Handle sending ---
+    async function sendMessage(finalMessage: string) {
+        if (!finalMessage.trim()) return;
+
+        setMessages((m) => [...m, { from: "user", text: finalMessage }]);
         setValue("");
 
-        // build messages payload for server
         const payload = {
-            sessionId: sessionIdRef.current, // create a UUID ref below
-            messages: [{ role: "user", content: userMessage }],
-            context: window.__JAGRITI_CONTEXT
+            sessionId: sessionIdRef.current,
+            messages: [{ role: "user", content: finalMessage }],
+            context: window.__JAGRITI_CONTEXT || {}, // safe fallback
         };
 
         try {
             const res = await fetch("/api/chat", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(payload)
+                body: JSON.stringify(payload),
             });
+
             const data = await res.json();
 
             if (data?.assistant) {
@@ -50,14 +49,26 @@ export default function ChatWidget() {
             }
         } catch (err) {
             console.error("Chat send error", err);
-            setMessages((m) => [...m, { from: "bot", text: "Network error — try again." }]);
+            setMessages((m) => [
+                ...m,
+                { from: "bot", text: "Network error — try again." },
+            ]);
         }
     }
 
+    const send = () => sendMessage(value);
+
+    const quickSend = (msg: string) => {
+        sendMessage(msg); // autosend
+    };
+
+    const handleKey = (e: any) => {
+        if (e.key === "Enter") send();
+    };
 
     return (
         <>
-            {/* Floating Chat Bubble */}
+            {/* Floating Button */}
             <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
                 <div onClick={() => setOpen((s) => !s)} className="cursor-pointer">
                     <ChatBubbleIcon />
@@ -65,33 +76,80 @@ export default function ChatWidget() {
 
                 {open && (
                     <div className="w-80 bg-[rgba(8,10,15,0.95)] rounded-2xl shadow-lg border border-white/6 overflow-hidden">
+                        {/* Header */}
                         <div className="px-4 py-3 border-b border-white/6">
                             <div className="font-semibold">Jagriti&apos;s AI</div>
-                            <div className="text-xs text-slate-400">Friendly assistant for recruiters & visitors</div>
+                            <div className="text-xs text-slate-400">
+                                Friendly assistant for recruiters & visitors
+                            </div>
                         </div>
 
+                        {/* Messages */}
                         <div className="p-3 max-h-64 overflow-auto space-y-2">
                             {messages.map((m, i) => (
-                                <div key={i} className={`flex ${m.from === "bot" ? "justify-start" : "justify-end"}`}>
-                                    <div className={`max-w-[80%] px-3 py-2 rounded-lg ${m.from === "bot" ? "bg-white/6" : "bg-gradient-to-r from-primary to-accent text-white"}`}>
+                                <div
+                                    key={i}
+                                    className={`flex ${m.from === "bot" ? "justify-start" : "justify-end"
+                                        }`}
+                                >
+                                    <div
+                                        className={`max-w-[80%] px-3 py-2 rounded-lg ${m.from === "bot"
+                                                ? "bg-white/6"
+                                                : "bg-gradient-to-r from-primary to-accent text-white"
+                                            }`}
+                                    >
                                         {m.text}
                                     </div>
                                 </div>
                             ))}
                         </div>
-                        <div className="flex gap-2 flex-wrap mt-2 text-[11px] text-white/80">
-                            <button className="px-2 py-1 bg-white/10 rounded" onClick={() => setValue("show projects")}>Projects</button>
-                            <button className="px-2 py-1 bg-white/10 rounded" onClick={() => setValue("show skills")}>Skills</button>
-                            <button className="px-2 py-1 bg-white/10 rounded" onClick={() => setValue("show experience")}>Experience</button>
-                            <button className="px-2 py-1 bg-white/10 rounded" onClick={() => setValue("show freelance projects")}>Freelance</button>
-                            <button className="px-2 py-1 bg-white/10 rounded" onClick={() => setValue("show resumes")}>Resumes</button>
+
+                        {/* Quick Buttons */}
+                        <div className="flex gap-2 flex-wrap px-3 pb-2 text-[11px] text-white/80">
+                            <button
+                                className="px-2 py-1 bg-white/10 rounded"
+                                onClick={() => quickSend("show projects")}
+                            >
+                                Projects
+                            </button>
+                            <button
+                                className="px-2 py-1 bg-white/10 rounded"
+                                onClick={() => quickSend("show skills")}
+                            >
+                                Skills
+                            </button>
+                            <button
+                                className="px-2 py-1 bg-white/10 rounded"
+                                onClick={() => quickSend("show experience")}
+                            >
+                                Experience
+                            </button>
+                            <button
+                                className="px-2 py-1 bg-white/10 rounded"
+                                onClick={() => quickSend("show freelance projects")}
+                            >
+                                Freelance
+                            </button>
+                            <button
+                                className="px-2 py-1 bg-white/10 rounded"
+                                onClick={() => quickSend("show resumes")}
+                            >
+                                Resumes
+                            </button>
                         </div>
 
-
-
+                        {/* Input Box */}
                         <div className="px-3 py-2 border-t border-white/6 flex gap-2">
-                            <input value={value} onChange={(e) => setValue(e.target.value)} placeholder="Ask about roles, projects..." className="flex-1 bg-transparent outline-none text-sm" />
-                            <button onClick={send} className="px-3 py-1 rounded bg-white/6">Send</button>
+                            <input
+                                value={value}
+                                onChange={(e) => setValue(e.target.value)}
+                                onKeyDown={handleKey}
+                                placeholder="Ask about roles, projects..."
+                                className="flex-1 bg-transparent outline-none text-sm"
+                            />
+                            <button onClick={send} className="px-3 py-1 rounded bg-white/6">
+                                Send
+                            </button>
                         </div>
                     </div>
                 )}
