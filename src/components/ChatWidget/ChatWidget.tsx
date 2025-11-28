@@ -12,7 +12,7 @@ export default function ChatWidget() {
 
     const [open, setOpen] = useState(false);
     const [messages, setMessages] = useState<{ from: "user" | "bot"; text: string }[]>([
-        { from: "bot", text: "Hi — I am Jagriti AI. How can I help you today?" },
+        { from: "bot", text: "Hi — I am Jagriti's AI. How can I help you today?" },
     ]);
     const [value, setValue] = useState("");
 
@@ -32,8 +32,7 @@ export default function ChatWidget() {
         const payload = {
             sessionId: sessionIdRef.current, // create a UUID ref below
             messages: [{ role: "user", content: userMessage }],
-            // roleContext: window.__JAGRITI_ROLE_CONTEXT || null, // optional global role context
-            // projectContext: window.__JAGRITI_PROJECT_CONTEXT || null
+            context: window.__JAGRITI_CONTEXT 
         };
 
         try {
@@ -67,7 +66,7 @@ export default function ChatWidget() {
                 {open && (
                     <div className="w-80 bg-[rgba(8,10,15,0.95)] rounded-2xl shadow-lg border border-white/6 overflow-hidden">
                         <div className="px-4 py-3 border-b border-white/6">
-                            <div className="font-semibold">Jagriti AI</div>
+                            <div className="font-semibold">Jagriti&apos;s AI</div>
                             <div className="text-xs text-slate-400">Friendly assistant for recruiters & visitors</div>
                         </div>
 

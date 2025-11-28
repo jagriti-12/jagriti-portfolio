@@ -9,6 +9,7 @@ import EducationSection from "@/components/Education";
 import CertificationsSection from "@/components/Certification";
 import ResumeSection from "@/components/Resume";
 import ContactSection from "@/components/Contact";
+import { PROJECTS } from "@/components/Projects/project-data";
 
 
 
