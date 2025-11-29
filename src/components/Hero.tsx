@@ -21,17 +21,17 @@ export default function Hero() {
                         </a>
                         <button
                             onClick={() => window.dispatchEvent(new Event("openChat"))}
-                            className="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/80 transition"
+                            className="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/80 transition border-white-100"
                         >
                             Ask Jagriti’s AI →
                         </button>
                     </div>
 
                     <div className="mt-8 flex flex-wrap gap-3">
-                        <span className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/3 text-sm">React</span>
-                        <span className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/3 text-sm">Next.js</span>
-                        <span className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/3 text-sm">Tailwind</span>
-                        <span className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/3 text-sm">AI</span>
+                        <span className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/3 text-sm"> React </span>
+                        <span className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/3 text-sm"> Next.js </span>
+                        <span className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/3 text-sm"> Tailwind </span>
+                        <span className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/3 text-sm"> AI </span>
                     </div>
                 </div>
 
