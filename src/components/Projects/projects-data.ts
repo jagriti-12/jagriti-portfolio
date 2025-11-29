@@ -45,5 +45,16 @@ export const PROJECTS: Project[] = [
         github: "",
         demo: "",
         image: "/images/projects/emotion.png"
+    },
+    {
+        id: "News-Aggregator",
+        title: "Basic News Aggregator Website",
+        description: "A simple news aggregator website using Django framework and API integrations.",
+        longDescription: `Built a basic API integration website using Django framework to fetch news from different sources and display them in an organized manner.`,
+        tech: ["Python", "Django", "APIs"],
+        roles: ["Django", "Backend"],
+        github: "",
+        demo: "",
+        image: "/images/projects/emotion.png"
     }
 ];
