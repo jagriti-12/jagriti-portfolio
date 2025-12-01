@@ -10,11 +10,38 @@ export default function ContactForm() {
         message: ""
     });
 
+    const [status, setStatus] = useState(""); // NEW
+
     const handle = (e: any) =>
         setForm({ ...form, [e.target.name]: e.target.value });
 
+    async function submit(e: any) {
+        e.preventDefault();
+        setStatus("Sending...");
+
+        try {
+            const res = await fetch("/api/contact", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(form)
+            });
+
+            const data = await res.json();
+
+            if (data.success) {
+                setStatus("Message sent successfully!");
+                setForm({ name: "", email: "", message: "" });
+            } else {
+                setStatus("Failed to send message.");
+            }
+        } catch (err) {
+            setStatus("Server error — try again.");
+        }
+    }
+
     return (
         <motion.form
+            onSubmit={submit}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -48,11 +75,15 @@ export default function ContactForm() {
             />
 
             <button
-                type="button"
+                type="submit"
                 className="px-4 py-3 rounded-xl bg-gradient-to-r from-primary to-accent text-sm font-semibold hover:scale-105 transition"
             >
                 Send Message
             </button>
+
+            {status && (
+                <p className="text-sm text-white/60 mt-1">{status}</p>
+            )}
         </motion.form>
     );
 }
