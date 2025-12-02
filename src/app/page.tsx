@@ -8,7 +8,7 @@ import ExperienceSection from "@/components/Experience";
 import EducationSection from "@/components/Education";
 import CertificationsSection from "@/components/Certification";
 import ResumeSection from "@/components/Resume";
-import ContactSection from "@/components/Contact/InfoBox";
+import ContactSection from "@/components/Contact/ContactSection";
 import { PROJECTS } from "@/components/Projects/project-data";
 
 /**

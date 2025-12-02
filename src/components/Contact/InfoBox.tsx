@@ -1,44 +1,56 @@
 "use client";
 
-import ContactForm from "./ContactSection";
-import RecruiterForm from "./JagritiInquiryForm";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail, HiOutlinePhone, HiOutlineLocationMarker } from "react-icons/hi";
 
-export default function ContactSection() {
+export default function InfoBox() {
     return (
-        <section id="contact" className="py-24 px-6">
-            <div className="mx-auto max-w-6xl">
-                <motion.h2
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="text-4xl font-bold mb-10"
-                >
-                    Contact
-                </motion.h2>
-                <div className="grid md:grid-cols-2 gap-10">
-                    <ContactForm />
-                    <RecruiterForm />
+        <motion.div
+            initial={{ opacity: 0, y: 6 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="p-8 rounded-2xl bg-gradient-to-br from-neutral-900/70 to-neutral-900/40 border border-neutral-800 shadow-xl"
+        >
+            <div className="space-y-8">
+                {/* Address */}
+                <div className="flex gap-4 items-start">
+                    <div className="w-12 h-12 rounded-full bg-neutral-800/60 flex items-center justify-center text-pink-400 text-xl">
+                        <HiOutlineLocationMarker />
+                    </div>
+                    <div>
+                        <h4 className="text-white font-semibold text-sm">Address</h4>
+                        <p className="text-neutral-400 text-sm">Chandigarh, India</p>
+                    </div>
                 </div>
-                {/* Socials */}
-                <div className="mt-16 flex items-center gap-6 justify-center">
-                    <a
-                        href="https://github.com/jags-jagriti"
-                        target="_blank"
-                        className="text-3xl text-white hover:text-accent transition"
-                    >
-                        <FaGithub />
-                    </a>
-                    <a
-                        href="https://www.linkedin.com/in/jagriti-sachdeva/"
-                        target="_blank"
-                        className="text-3xl text-white hover:text-accent transition"
-                    >
-                        <FaLinkedin />
-                    </a>
+
+                {/* Phone */}
+                <div className="flex gap-4 items-start">
+                    <div className="w-12 h-12 rounded-full bg-neutral-800/60 flex items-center justify-center text-pink-400 text-xl">
+                        <HiOutlinePhone />
+                    </div>
+                    <div>
+                        <h4 className="text-white font-semibold text-sm">Phone</h4>
+                        <a href="tel:+919463954709" className="text-neutral-400 text-sm hover:text-white">
+                            +91 9463954709
+                        </a>
+                    </div>
+                </div>
+
+                {/* Email */}
+                <div className="flex gap-4 items-start">
+                    <div className="w-12 h-12 rounded-full bg-neutral-800/60 flex items-center justify-center text-pink-400 text-xl">
+                        <HiOutlineMail />
+                    </div>
+                    <div>
+                        <h4 className="text-white font-semibold text-sm">Email</h4>
+                        <a
+                            href="mailto:jags.jagriti12@gmail.com"
+                            className="text-neutral-400 text-sm break-words hover:text-white"
+                        >
+                            jags.jagriti12@gmail.com
+                        </a>
+                    </div>
                 </div>
             </div>
-        </section>
+        </motion.div>
     );
 }
