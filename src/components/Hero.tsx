@@ -52,16 +52,17 @@ export default function Hero() {
                 </div>
                 {/* RIGHT SIDE — 3D Avatar Video */}
                 <div className="flex items-center justify-center">
-                    <div className="w-72 h-90 md:w-90 md:h-106 rounded-2xl bg-neutral-900 border border-white/10 overflow-hidden shadow-xl">
+                    <div className="w-72 h-90 md:w-90 md:h-120 rounded-2xl">
                         {/* 3D Video */}
-                        <video
+                        {/* <video
                             src="/3d-avatar.mp4"
                             autoPlay
                             loop
                             muted
                             playsInline
                             className="w-full h-full object-cover"
-                        />
+                        /> */}
+                        <img src={"3dmodel.png"} alt="Avatar" className="w-full h-full object-cover" />
                     </div>
                 </div>
             </div>

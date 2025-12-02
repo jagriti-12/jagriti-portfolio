@@ -5,15 +5,12 @@ const config = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: "#6D28D9",      // Purple
-          light: "#A78BFA",
-          dark: "#4C1D95",
-        },
-        accent: "#06B6D4",          // Teal
-        pinkish: "#FB7185",         // Pink accent
-        darkBg: "#0F172A",          // Almost-black background
+        colors: {
+          primary: "var(--accent)",
+          accent: "var(--text-primary)"
+        }
       },
+      
 
       borderRadius: {
         xl: "1rem",

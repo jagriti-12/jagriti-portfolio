@@ -110,16 +110,16 @@ export default function JagritiInquiryForm() {
                     </div>
                     <h3 className="text-xl font-semibold text-white"> Message sent</h3>
                     <p className="text-neutral-300 mt-2">Thanks — I will review the inquiry and respond within 24 hours.</p>
-                    <button onClick={() => setSent(false)} className="mt-6 px-4 py-2 rounded bg-neutral-800/60 text-white">Send another</button>
+                    <button onClick={() => setSent(false)} className="mt-6 px-4 py-2 rounded bg-[var(--bg-secondary)] text-white">Send another</button>
                 </div>
             </motion.div>
         );
     }
 
-    const inputBase = "w-full px-4 py-3 rounded-lg bg-neutral-900/40 border border-neutral-800 text-white placeholder-neutral-400 focus:ring-1 focus:ring-white-500 outline-none";
+    const inputBase = "w-full px-4 py-3 rounded-lg bg-[var(--bg-primary)] border border-neutral-800 text-white placeholder-neutral-400 focus:ring-1 focus:ring-white-500 outline-none";
 
     return (
-        <motion.form ref={ref} onSubmit={handleSubmit} className="max-w-2xl mx-auto p-6 rounded-2xl bg-gradient-to-br from-neutral-900/60 to-neutral-900/40 border border-neutral-800 shadow-lg">
+        <motion.form ref={ref} onSubmit={handleSubmit} className="max-w-2xl mx-auto p-6 rounded-2xl bg-[var(--bg-secondary)] border border-neutral-800 shadow-lg">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                 <input name="name" value={data.name} onChange={handleChange} placeholder="Your name" className={inputBase} />
                 <input name="email" value={data.email} onChange={handleChange} placeholder="Your email" className={inputBase} />
@@ -138,7 +138,7 @@ export default function JagritiInquiryForm() {
                             key={t.id}
                             onClick={() => setData(prev => ({ ...prev, contactType: t.id }))}
                             type="button"
-                            className={`px-3 py-2 rounded-lg text-sm text-white border ${data.contactType === t.id ? "bg-gradient-to-r from-black-900 to-white-900 border border-neutral-700" : "bg-neutral-900/30 border-neutral-800"}`}
+                            className={`px-3 py-2 rounded-lg text-sm text-white border ${data.contactType === t.id ? "bg-gradient-to-r from-black-900 to-white-900 border border-neutral-700" : "bg-[var(--bg-primary)] border-neutral-800"}`}
                         >
                             <div className="text-xl">{t.icon}</div>
                             <div className="mt-1">{t.label}</div>
@@ -176,7 +176,7 @@ export default function JagritiInquiryForm() {
 
             {errors.submit && <p className="text-sm text-red-400 mb-3">{errors.submit}</p>}
             <div className="flex gap-3">
-                <button type="submit" disabled={submitting} className={`px-5 py-3 rounded-lg text-white font-medium ${submitting ? "bg-neutral-700" : "border border-neutral-700 hover:opacity-95"}`}>
+                <button type="submit" disabled={submitting} className={`px-5 py-3 rounded-lg text-white font-medium ${submitting ? "bg-[var(--bg-primary)]" : "border border-neutral-700 hover:opacity-95"}`}>
                     {submitting ? "Sending..." : "Send Message"}
                 </button>
                 <button type="button" onClick={() => { setData({ name: "", email: "", company: "", role: "", contactType: "", urgency: "medium", subject: "", message: "", budget: "", timeline: "" }); setErrors({}); }} className="px-4 py-3 rounded-lg border border-neutral-800 text-neutral-300">

@@ -15,7 +15,7 @@ export default function ContactSection() {
 
                 {/* Heading */}
                 <div className="text-center mb-10">
-                    <h2 className="text-3xl font-bold text-white">Get in touch</h2>
+                    <h2 className="text-3xl font-bold text-[var(--text-primary)]">Get in touch</h2>
                     <p className="text-neutral-400 text-sm max-w-xl mx-auto mt-3">
                         Whether it's a job, project collaboration, or a quick question — send me a message.
                     </p>
@@ -23,12 +23,12 @@ export default function ContactSection() {
 
                 {/* Tabs */}
                 <div className="flex justify-center mb-10">
-                    <div className="flex items-center rounded-full p-1 bg-neutral-900 border border-neutral-800">
+                    <div className="flex items-center rounded-full p-1 bg-[var(--bg-primary)] border border-neutral-800">
                         <button
                             onClick={() => setTab("info")}
                             className={`px-6 py-2 rounded-full text-sm font-medium transition ${tab === "info"
-                                ? "bg-neutral-800 text-white"
-                                : "text-neutral-400 hover:text-white"
+                                ? "bg-[var(--bg-secondary)] text-[var(--text-primary)]"
+                                : "text-neutral-400"
                                 }`}
                         >
                             Contact Info
@@ -36,8 +36,8 @@ export default function ContactSection() {
                         <button
                             onClick={() => setTab("form")}
                             className={`px-6 py-2 rounded-full text-sm font-medium transition ${tab === "form"
-                                ? "bg-neutral-800 text-white"
-                                : "text-neutral-400 hover:text-white"
+                                ? "bg-[var(--bg-secondary)] text-[var(--text-primary)]"
+                                : "text-neutral-400 hover:text-[var(--text-primary)]"
                                 }`}
                         >
                             Recruiter Inquiry
@@ -58,23 +58,23 @@ export default function ContactSection() {
                         >
 
                             {/* QUICK ACTIONS */}
-                            <div className="p-6 rounded-2xl bg-neutral-900 border border-neutral-800 shadow-lg text-center ">
-                                <h3 className="text-lg font-semibold text-white mb-2">Quick Actions</h3>
-                                <p className="text-sm text-neutral-400 mb-4">
+                            <div className="p-6 rounded-2xl bg-[var(--bg-primary)] border border-neutral-800 text-center ">
+                                <h3 className="text-lg font-semibold text-[var(--text-primary)] mb-2">Quick Actions</h3>
+                                <p className="text-sm text-[var(--text-primary)] mb-4">
                                     Prefer a faster way? Use the instant buttons below.
                                 </p>
 
                                 <div className="flex items-center gap-4 justify-center ">
                                     <a
                                         href="mailto:jags.jagriti12@gmail.com"
-                                        className="px-4 py-2 rounded-lg bg-neutral-800 text-white text-sm hover:opacity-80"
+                                        className="px-4 py-2 rounded-lg bg-[var(--bg-secondary)] text-[var(--text-primary)] text-sm"
                                     >
                                         Send Email
                                     </a>
                                     <span className="hidden md:block text-neutral-600">|</span>
                                     <button
                                         onClick={() => setTab("form")}
-                                        className="px-4 py-2 rounded-lg bg-neutral-800 text-white text-sm hover:opacity-80"
+                                        className="px-4 py-2 rounded-lg bg-[var(--bg-secondary)] text-[var(--text-primary)] text-sm"
                                     >
                                         Open Inquiry Form
                                     </button>
@@ -82,7 +82,7 @@ export default function ContactSection() {
                                     <div className="flex items-center gap-2">
                                         <a
                                             href="https://wa.me/919463954709"
-                                            className="px-4 py-2 rounded-lg bg-neutral-800 text-white text-sm hover:opacity-80"
+                                            className="px-4 py-2 rounded-lg bg-[var(--bg-secondary)] text-[var(--text-primary)] text-sm"
                                         >
                                             Connect over Whatsapp
                                         </a>
@@ -91,16 +91,16 @@ export default function ContactSection() {
                             </div>
 
                             {/* BIG STRIPE — Address | Phone | Email */}
-                            <div className="p-6 rounded-2xl bg-neutral-900 border border-neutral-800 text-center space-y-4 shadow-lg">
+                            <div className="p-6 rounded-2xl bg-[var(--bg-primary)] border border-neutral-800 text-center space-y-4 shadow-lg">
 
-                                <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-white font-medium text-lg tracking-wide">
+                                <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-[var(--text-primary)] font-medium text-lg tracking-wide">
 
                                     {/* Address */}
                                     <div className="flex items-center gap-2">
                                         <HiOutlineLocationMarker className="text-xl" />
                                         <a
                                             href="#"
-                                            className="px-4 py-2 rounded-lg bg-neutral-800 text-white text-sm hover:opacity-80"
+                                            className="px-4 py-2 rounded-lg bg-[var(--bg-secondary)] text-[var(--text-primary)] text-sm"
                                         >
                                             Jalandhar,Punjab,India
                                         </a>
@@ -113,7 +113,7 @@ export default function ContactSection() {
                                         <HiOutlinePhone className="text-xl" />
                                         <a
                                             href="tel:+919463954709"
-                                            className="px-4 py-2 rounded-lg bg-neutral-800 text-white text-sm hover:opacity-80"
+                                            className="px-4 py-2 rounded-lg bg-[var(--bg-secondary)] text-[var(--text-primary)] text-sm"
                                         >
                                             Schedule a call
                                         </a>
@@ -125,7 +125,7 @@ export default function ContactSection() {
                                         <HiOutlineMail className="text-xl" />
                                         <a
                                             href="mailto:jags.jagriti12@gmail.com"
-                                            className="px-4 py-2 rounded-lg bg-neutral-800 text-white text-sm hover:opacity-80"
+                                            className="px-4 py-2 rounded-lg bg-[var(--bg-secondary)] text-[var(--text-primary)] text-sm"
                                         > Send Mail</a>
                                     </div>
 
@@ -139,7 +139,7 @@ export default function ContactSection() {
                                 <a
                                     href="https://github.com/jagriti-12"
                                     target="_blank"
-                                    className="text-2xl text-white hover:opacity-80"
+                                    className="text-2xl text-[var(--text-primary)]"
                                 >
                                     <FaGithub size={32} />
                                 </a>
@@ -147,7 +147,7 @@ export default function ContactSection() {
                                 <a
                                     href="https://linkedin.com/in/jagriti-sachdeva"
                                     target="_blank"
-                                    className="text-2xl text-white hover:opacity-80"
+                                    className="text-2xl text-[var(--text-primary)]"
                                 >
                                     <FaLinkedin size={32} />
                                 </a>
