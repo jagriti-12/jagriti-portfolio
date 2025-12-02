@@ -9,7 +9,6 @@ export async function POST(req: NextRequest) {
         if (!name || !email || !company || !role || !message) {
             return NextResponse.json(
                 { error: "Missing fields" },
-                { status: 400 }
             );
         }
 

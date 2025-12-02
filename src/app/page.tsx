@@ -8,11 +8,14 @@ import ExperienceSection from "@/components/Experience";
 import EducationSection from "@/components/Education";
 import CertificationsSection from "@/components/Certification";
 import ResumeSection from "@/components/Resume";
-import ContactSection from "@/components/Contact";
+import ContactSection from "@/components/Contact/InfoBox";
 import { PROJECTS } from "@/components/Projects/project-data";
 
-
-
+/**
+ * The Home page component of the application.
+ * It renders the Navbar, Hero, About, Projects, Tech, Experience, Education, Certifications, Resume, and Contact sections.
+ * It also renders the ChatWidget.
+ */
 export default function Home() {
   return (
     <>
