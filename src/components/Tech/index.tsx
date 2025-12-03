@@ -33,8 +33,8 @@ export default function TechSection() {
                             key={c}
                             onClick={() => setSelected(c)}
                             className={`px-4 py-2 rounded-full text-sm ${selected === c
-                                    ? "bg-gradient-to-r from-primary to-accent text-white"
-                                    : "bg-white/10 text-slate-300"
+                                ? "bg-secondary text-white"
+                                : "bg-white/10 text-slate-300"
                                 }`}
                         >
                             {c}

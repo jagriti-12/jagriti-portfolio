@@ -58,7 +58,7 @@ export default function ContactSection() {
                         >
 
                             {/* QUICK ACTIONS */}
-                            <div className="p-6 rounded-2xl bg-[var(--bg-primary)] border border-neutral-800 text-center ">
+                            <div className="p-6 rounded-2xl bg-[var(--bg-secondary)] border border-neutral-800 text-center ">
                                 <h3 className="text-lg font-semibold text-[var(--text-primary)] mb-2">Quick Actions</h3>
                                 <p className="text-sm text-[var(--text-primary)] mb-4">
                                     Prefer a faster way? Use the instant buttons below.
@@ -67,14 +67,14 @@ export default function ContactSection() {
                                 <div className="flex items-center gap-4 justify-center ">
                                     <a
                                         href="mailto:jags.jagriti12@gmail.com"
-                                        className="px-4 py-2 rounded-lg bg-[var(--bg-secondary)] text-[var(--text-primary)] text-sm"
+                                        className="px-4 py-2 rounded-lg bg-[var(--bg-primary)] text-[var(--text-primary)] text-sm border border-gray-700"
                                     >
                                         Send Email
                                     </a>
                                     <span className="hidden md:block text-neutral-600">|</span>
                                     <button
                                         onClick={() => setTab("form")}
-                                        className="px-4 py-2 rounded-lg bg-[var(--bg-secondary)] text-[var(--text-primary)] text-sm"
+                                        className="px-4 py-2 rounded-lg bg-[var(--bg-primary)] text-[var(--text-primary)] text-sm border border-gray-700"
                                     >
                                         Open Inquiry Form
                                     </button>
@@ -82,7 +82,7 @@ export default function ContactSection() {
                                     <div className="flex items-center gap-2">
                                         <a
                                             href="https://wa.me/919463954709"
-                                            className="px-4 py-2 rounded-lg bg-[var(--bg-secondary)] text-[var(--text-primary)] text-sm"
+                                            className="px-4 py-2 rounded-lg bg-[var(--bg-primary)] text-[var(--text-primary)] text-sm border border-gray-700"
                                         >
                                             Connect over Whatsapp
                                         </a>
@@ -91,7 +91,7 @@ export default function ContactSection() {
                             </div>
 
                             {/* BIG STRIPE — Address | Phone | Email */}
-                            <div className="p-6 rounded-2xl bg-[var(--bg-primary)] border border-neutral-800 text-center space-y-4 shadow-lg">
+                            <div className="p-6 rounded-2xl bg-[var(--bg-secondary)] border border-neutral-800 text-center space-y-4 shadow-lg">
 
                                 <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-[var(--text-primary)] font-medium text-lg tracking-wide">
 
@@ -100,7 +100,7 @@ export default function ContactSection() {
                                         <HiOutlineLocationMarker className="text-xl" />
                                         <a
                                             href="#"
-                                            className="px-4 py-2 rounded-lg bg-[var(--bg-secondary)] text-[var(--text-primary)] text-sm"
+                                            className="px-4 py-2 rounded-lg bg-[var(--bg-primary)] text-[var(--text-primary)] text-sm border border-gray-700"
                                         >
                                             Jalandhar,Punjab,India
                                         </a>
@@ -113,7 +113,7 @@ export default function ContactSection() {
                                         <HiOutlinePhone className="text-xl" />
                                         <a
                                             href="tel:+919463954709"
-                                            className="px-4 py-2 rounded-lg bg-[var(--bg-secondary)] text-[var(--text-primary)] text-sm"
+                                            className="px-4 py-2 rounded-lg bg-[var(--bg-primary)] text-[var(--text-primary)] text-sm border border-gray-700"
                                         >
                                             Schedule a call
                                         </a>
@@ -125,7 +125,7 @@ export default function ContactSection() {
                                         <HiOutlineMail className="text-xl" />
                                         <a
                                             href="mailto:jags.jagriti12@gmail.com"
-                                            className="px-4 py-2 rounded-lg bg-[var(--bg-secondary)] text-[var(--text-primary)] text-sm"
+                                            className="px-4 py-2 rounded-lg bg-[var(--bg-primary)] text-[var(--text-primary)] text-sm border border-gray-700"
                                         > Send Mail</a>
                                     </div>
 
