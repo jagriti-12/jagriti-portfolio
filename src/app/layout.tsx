@@ -6,9 +6,19 @@ import ContextProvider from "@/components/ContextProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Jagriti | Portfolio",
-  description: "AI-powered portfolio website of Jagriti Sachdeva",
+  title: "Jagriti Sachdeva – Frontend Developer & UI/UX Designer",
+  description: "Portfolio of Jagriti Sachdeva — Frontend Developer, UI/UX Designer and Data Analyst skilled in Next.js, React, Django, Figma, SQL and Data Visualization.",
+  keywords: [
+    "Frontend Developer",
+    "UI/UX Designer",
+    "React Developer",
+    "Next.js Developer",
+    "Chandigarh University CSE",
+    "Data Analyst",
+    "Portfolio"
+  ]
 };
+
 
 export default function RootLayout({ children }) {
   // const [theme, setTheme] = useState("dark");
@@ -27,7 +37,26 @@ export default function RootLayout({ children }) {
   // }, [theme]);
   return (
     <html lang="en">
-    {/* <html lang="en" className={theme === "light" ? "light" : ""}> */}
+      <head>
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Jagriti Sachdeva", 
+            "jobTitle": "Frontend Developer & UI/UX Designer",
+            "url": "https://your-portfolio-link.com",
+            "sameAs": [
+            "https://github.com/jagriti-12",
+            "https://linkedin.com/in/jagriti-sachdeva"
+            ],
+            "alumniOf": "Chandigarh University"
+            }
+            `}
+        </script>
+
+      </head>
+      {/* <html lang="en" className={theme === "light" ? "light" : ""}> */}
       <body className={`${inter.className} bg-darkBg text-white`}>
 
         {/* This file runs client code */}

@@ -2,15 +2,15 @@
 import { motion } from "framer-motion";
 export default function Hero() {
     return (
-        <section id="hero" className="min-h-screen flex items-center">
+        <header id="hero" className="min-h-screen flex items-center">
             <div className="mx-auto max-w-6xl px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
-                {/* LEFT SIDE TEXT */}
+                {/* LEFT CONTENT */}
                 <div>
                     <motion.h1
                         initial={{ y: 10, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 0.05 }}
-                        className="text-4xl md:text-6xl font-extrabold leading-tight"
+                        className="text-4xl md:text-6xl font-extrabold leading-tight text-[var(--text-primary)]"
                     >
                         Hi, I’m <span className="text-yellow-200">Jagriti</span>
                     </motion.h1>
@@ -18,54 +18,52 @@ export default function Hero() {
                         initial={{ y: 10, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 0.15 }}
-                        className="mt-4 text-lg text-slate-300 max-w-xl"
+                        className="mt-4 text-lg text-[var(--text-secondary)] max-w-xl"
                     >
-                        Frontend Developer • AI Enthusiast • Research Writer.
-                        I build beautiful, accessible interfaces and intelligent experiences.
+                        <strong>Frontend Developer • UI/UX Designer • Data Analyst</strong>
+                        <br /><br />
+                        Recent Computer Science graduate from
+                        <u><i> Chandigarh University </i></u> exploring the realm of
+                        <strong> frontend development, user experience design, and data insights.</strong>
                     </motion.p>
-                    {/* Buttons */}
+                    {/* CTA Buttons */}
                     <div className="mt-6 flex gap-3">
                         <a
                             href="#resume"
-                            className="px-5 py-3 rounded-2xl bg-gradient-to-r from-primary to-accent text-white font-medium shadow-lg hover:scale-105 transition"
+                            className="px-5 py-4 rounded-2xl bg-[var(--bg-secondary)] text-[var(--text-primary)] text-m border border-gray-700 font-semibold shadow-lg hover:scale-105 transition"
                         >
                             View Resumes
                         </a>
                         <button
                             onClick={() => window.dispatchEvent(new Event("openChat"))}
-                            className="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/80 transition"
+                            className="px-6 py-3 rounded-2xl bg-[var(--bg-secondary)] text-[var(--text-primary)] font-semibold border border-gray-700 hover:scale-105 transition"
                         >
                             Ask Jagriti’s AI →
                         </button>
                     </div>
-                    {/* Tech Pills */}
+                    {/* Skill Pills */}
                     <div className="mt-8 flex flex-wrap gap-3">
-                        {["React", "Next.js", "Tailwind", "AI"].map((skill) => (
+                        {["Next.js", "Django", "Python", "AI", "Figma", "SQL", "PowerBi"].map((skill) => (
                             <span
                                 key={skill}
-                                className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/3 text-sm"
+                                className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/5 text-sm text-[var(--text-secondary)] backdrop-blur-sm border border-white/10"
                             >
                                 {skill}
                             </span>
                         ))}
                     </div>
                 </div>
-                {/* RIGHT SIDE — 3D Avatar Video */}
+                {/* RIGHT — 3D MODEL */}
                 <div className="flex items-center justify-center">
-                    <div className="w-72 h-90 md:w-90 md:h-120 rounded-2xl">
-                        {/* 3D Video */}
-                        {/* <video
-                            src="/3d-avatar.mp4"
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
+                    <div className="w-72 h-90 md:w-90 md:h-120 rounded-2xl overflow-hidden">
+                        <img
+                            src="/3dmodel.png"
+                            alt="Jagriti Sachdeva 3D avatar representing Frontend Developer and UI/UX Designer"
                             className="w-full h-full object-cover"
-                        /> */}
-                        <img src={"3dmodel.png"} alt="Avatar" className="w-full h-full object-cover" />
+                        />
                     </div>
                 </div>
             </div>
-        </section>
+        </header>
     );
 }
