@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
 export default function StatsCounter({
@@ -10,15 +10,19 @@ export default function StatsCounter({
     value: number;
     label: string;
 }) {
+
+    // correct reference
+    const ref = useRef(null);
+    const inView = useInView(ref, { margin: "-100px", once: true });
+
     const [count, setCount] = useState(0);
-    const ref = useInView({ margin: "-100px" });
 
     useEffect(() => {
-        if (!ref) return;
+        if (!inView) return;
 
         let start = 0;
         const end = value;
-        const duration = 1000;
+        const duration = 1200;
         const step = end / (duration / 16);
 
         const interval = setInterval(() => {
@@ -31,17 +35,18 @@ export default function StatsCounter({
         }, 16);
 
         return () => clearInterval(interval);
-    }, [ref, value]);
+    }, [inView, value]);
 
     return (
         <motion.div
+            ref={ref}
             initial={{ y: 20, opacity: 0 }}
-            animate={ref ? { y: 0, opacity: 1 } : {}}
+            animate={inView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 0.5 }}
             className="text-center"
         >
-            <div className="text-3xl font-bold">{count}+</div>
-            <div className="text-sm text-slate-400">{label}</div>
+            <div className="text-3xl font-bold text-white">{count}+</div>
+            <div className="text-sm text-yellow-200">{label}</div>
         </motion.div>
     );
 }

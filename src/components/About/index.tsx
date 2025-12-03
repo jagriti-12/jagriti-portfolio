@@ -5,10 +5,14 @@ import StatsCounter from "./StatsCounter";
 
 export default function AboutSection() {
     return (
-        <section id="about" className="py-24 px-6 bg-[rgba(255,255,255,0.02)]">
+        <section
+            id="about"
+            className="py-24 px-6 bg-[var(--bg-secondary)]"
+            aria-labelledby="about-heading"
+        >
             <div className="mx-auto max-w-6xl grid md:grid-cols-2 gap-14 items-center">
 
-                {/* Image */}
+                {/* IMAGE */}
                 <motion.div
                     initial={{ opacity: 0, x: -40 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -16,61 +20,72 @@ export default function AboutSection() {
                     viewport={{ once: true }}
                     className="flex justify-center"
                 >
-                    <div className="w-90 h-90 rounded-3xl overflow-hidden shadow-glow border border-white/10">
+                    <div className="w-80 h-80 md:w-96 md:h-96 rounded-3xl overflow-hidden 
+                        shadow-lg border border-white/10 bg-neutral-900/20"
+                    >
                         <img
-                            src="/images/profile/profile.jpg" // You will add your image in this path
-                            alt="Jagriti"
+                            src="/images/profile/profile.jpg"
+                            alt="Jagriti Sachdeva - Profile Photo"
                             className="w-full h-full object-cover"
+                            loading="lazy"
                         />
                     </div>
                 </motion.div>
 
-                {/* Text */}
+                {/* TEXT CONTENT */}
                 <motion.div
                     initial={{ opacity: 0, x: 40 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
                 >
-                    <h2 className="text-4xl font-bold mb-4">About Me</h2>
+                    <h2
+                        id="about-heading"
+                        className="text-4xl font-bold mb-4 text-white"
+                    >
+                        About Me
+                    </h2>
 
                     <p className="text-slate-300 leading-relaxed">
-                        I'm <span className="text-accent font-medium">Jagriti Sachdeva</span>,
-                        a passionate Frontend Developer, Research Writer, and AI enthusiast.
-                        I love building beautiful user interfaces and combining design & engineering
-                        into meaningful digital experiences.
+                        I’m <span className="font-semibold text-yellow-200">Jagriti Sachdeva</span>, a
+                        Frontend Developer with a strong foundation in UI/UX design,
+                        data understanding, and AI-driven development.
+                        I recently completed my B.Tech in Computer Science Engineering from
+                        <i className="text-yellow-100"> Chandigarh University</i>.
                     </p>
 
                     <p className="mt-4 text-slate-400 leading-relaxed">
-                        My work spans frontend apps, AI-assisted tools, research papers, technical writing,
-                        and interactive systems. I’m driven, curious, and excited to bring ideas to life
-                        through a blend of technology, design, and creativity.
+                        I love crafting interfaces that balance aesthetics with functionality—
+                        from interactive dashboards and smooth user flows to AI-powered tools
+                        and data-driven visualizations. Outside development, I enjoy writing,
+                        researching, exploring design patterns, and understanding how data
+                        influences real-world decisions.
                     </p>
 
-                    {/* Stats */}
+                    {/* STATS */}
                     <div className="mt-8 grid grid-cols-3 gap-4">
-                        <StatsCounter value={3} label="Years Exp" />
+                        <StatsCounter value={1} label="Years" />
                         <StatsCounter value={12} label="Projects" />
                         <StatsCounter value={20} label="Certifications" />
                     </div>
 
-                    {/* CTA */}
+                    {/* CTA BUTTONS */}
                     <div className="mt-8 flex gap-3">
                         <a
                             href="#projects"
-                            className="px-5 py-3 rounded-xl bg-gradient-to-r from-primary to-accent shadow-lg hover:scale-105 transition"
+                            className="px-5 py-3 rounded-xl 
+                            bg-[rgba(255,255,255,0.07)] border border-white/10
+                            text-white font-medium hover:scale-105 transition"
                         >
-                            View Projects
+                            Explore My Work
                         </a>
 
                         <button
-                            onClick={() => {
-                                const ev = new CustomEvent("openChat");
-                                window.dispatchEvent(ev);
-                            }}
-                            className="px-5 py-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition"
+                            onClick={() => window.dispatchEvent(new Event("openChat"))}
+                            className="px-5 py-3 rounded-xl bg-[rgba(255,255,255,0.05)]
+                            border border-white/10 text-white hover:bg-white/10 transition"
                         >
-                            Chat with AI
+                            Ask My AI Assistant
                         </button>
                     </div>
                 </motion.div>
