@@ -11,7 +11,7 @@ export default function TechSection() {
         const order = [
             "Frontend",
             "Backend",
-            "AI/ML",
+            // "AI/ML",
             "Data Analytics",
             "UI/UX",
             "Tools",
@@ -79,8 +79,8 @@ export default function TechSection() {
                     Click any category to explore detailed skills & tools.
                 </p>
 
-                {/* ⭐ 4 CARDS PER ROW */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {/* CARDS PER ROW */}
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
                     {categories.map((cat) => (
                         <TechCategoryCard
                             key={cat.name}

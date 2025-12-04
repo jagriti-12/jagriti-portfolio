@@ -10,40 +10,50 @@ export const TECH_STACK: TechItem[] = [
     { name: "React", category: "Frontend", icon: "/icons/react.svg" },
     { name: "Next.js", category: "Frontend", icon: "/icons/nextjs.svg" },
     { name: "Tailwind", category: "Frontend", icon: "/icons/tailwind.svg" },
-    { name: "TScript", category: "Frontend", icon: "/icons/typescript.svg" },
+    { name: "Type Script", category: "Frontend", icon: "/icons/typescript.svg" },
     { name: "HTML", category: "Frontend", icon: "/icons/html.svg" },
     { name: "CSS", category: "Frontend", icon: "/icons/css.svg" },
 
     // Backend
+    { name: "python", category: "Backend", icon: "/icons/python.svg" },
     { name: "Node.js", category: "Backend", icon: "/icons/nodejs.svg" },
-    { name: "Express.js", category: "Backend" },
+    { name: "Java", category: "Backend", icon: "/icons/java.svg" },
+    { name: "Java Script", category: "Backend", icon: "/icons/javascript.svg" },
+    { name: "Exp.js", category: "Backend", icon: "/icons/ex.svg" },
     { name: "Django", category: "Backend", icon: "/icons/django.svg" },
-    { name: "Postgres", category: "Backend" },
-    { name: "MySQL", category: "Backend" },
+    { name: "PHP", category: "Backend", icon: "/icons/php.svg" },
 
-    // AI / ML
-    { name: "Python", category: "AI/ML", icon: "/icons/python.svg" },
-    { name: "BERT", category: "AI/ML" },
-    { name: "TensorFlow", category: "AI/ML", icon: "/icons/tensorflow.svg" },
-    { name: "Transformers", category: "AI/ML" },
+
+    // // AI / ML
+    // { name: "Python", category: "AI/ML", icon: "/icons/python.svg" },
+    // { name: "BERT", category: "AI/ML" },
+    // { name: "TensorFlow", category: "AI/ML", icon: "/icons/tensorflow.svg" },
+    // { name: "Transformers", category: "AI/ML" },
 
     // Data Analytics
-    { name: "Pandas", category: "Data Analytics" },
-    { name: "Power BI", category: "Data Analytics" },
-    { name: "SQL", category: "Data Analytics" },
-    { name: "Excel", category: "Data Analytics" },
+    { name: "Pandas", category: "Data Analytics", icon: "/icons/pypandas.svg" },
+    { name: "Power BI", category: "Data Analytics", icon: "/icons/bi.svg" },
+    { name: "SQL", category: "Data Analytics", icon: "/icons/sql.svg" },
+    { name: "Excel", category: "Data Analytics", icon: "/icons/excel.svg" },
 
     // UI / UX
     { name: "Figma", category: "UI/UX", icon: "/icons/figma.svg" },
-    { name: "Prototyping", category: "UI/UX" },
-    { name: "Wireframing", category: "UI/UX" },
+    { name: "Adobe XD", category: "UI/UX", icon: "/icons/adobexd.svg" },
+    { name: "Proto- typing", category: "UI/UX", icon: "/icons/prototype.svg" },
+    { name: "Wire- framing", category: "UI/UX", icon: "/icons/wireframe.svg" },
+    { name: "Adobe Creative", category: "UI/UX", icon: "/icons/adobecreative.svg" },
+    { name: "Graphic Designing", category: "UI/UX", icon: "/icons/graphic.svg" },
+    { name: "Framer", category: "UI/UX", icon: "/icons/framer.svg" },
 
     // Tools / DevOps
     { name: "Git", category: "Tools", icon: "/icons/git.svg" },
+    { name: "GitHub", category: "Tools", icon: "/icons/github.svg" },
     { name: "Vercel", category: "Tools", icon: "/icons/vercel.svg" },
-    { name: "Docker", category: "Tools" },
+    { name: "Docker", category: "Tools", icon: "/icons/docker.svg" },
+    { name: "Xampp", category: "Tools", icon: "/icons/xampp.svg" },
 
     // Databases (optional category)
-    { name: "MongoDB", category: "Databases" },
-    { name: "SQLite", category: "Databases" },
+    { name: "Mongo DB", category: "Databases", icon: "/icons/mongodb.svg" },
+    { name: "Postgre SQL", category: "Databases", icon: "/icons/postgresql.svg" },
+    { name: "MySQL", category: "Databases", icon: "/icons/mysql.svg" },
 ];

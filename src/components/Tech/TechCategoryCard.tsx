@@ -1,10 +1,10 @@
 // components/tech/TechCategoryCard.tsx
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { TechItem } from "./tech-data";
 import clsx from "clsx";
+import { TechItem } from "./tech-data";
 
 export default function TechCategoryCard({
     category,
@@ -13,88 +13,85 @@ export default function TechCategoryCard({
     category: string;
     items: TechItem[];
 }) {
-    const [open, setOpen] = useState(false);
-
-    const visibleCount = useMemo(() => items.length, [items]);
+    const [flipped, setFlipped] = useState(false);
 
     return (
-        <div
-            className={clsx(
-                "rounded-2xl border transition-shadow",
-                "bg-[var(--bg-secondary)] border-white/5",
-                "overflow-hidden shadow-[0_0_15px_rgba(255,255,255,0.03)]"
-            )}
-            aria-expanded={open}
+        <motion.div
+            whileHover={{ scale: 1.03 }}
+            transition={{ duration: 0.25 }}
+            className="relative w-full h-48 sm:h-56 rounded-2xl cursor-pointer"
+            onClick={() => setFlipped((p) => !p)}
+            style={{
+                perspective: "1200px",
+            }}
         >
-            {/* HEADER */}
-            <button
-                onClick={() => setOpen((s) => !s)}
-                aria-controls={`skills-${category}`}
-                aria-expanded={open}
-                className="w-full flex items-center justify-between px-5 py-5 text-left"
-            >
-                <div>
-                    <div className="text-lg font-semibold text-white">{category}</div>
-                    <div className="text-xs text-slate-400 mt-1">
-                        {visibleCount} {visibleCount === 1 ? "skill" : "skills"}
-                    </div>
-                </div>
-
-                {/* CHEVRON */}
-                <div
-                    className={clsx(
-                        "flex items-center justify-center w-9 h-9 rounded-full",
-                        open ? "rotate-180" : "rotate-0",
-                        "transition-transform duration-300 text-slate-300"
-                    )}
-                    aria-hidden
-                >
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-                        <path
-                            d="M6 9l6 6 6-6"
-                            stroke="currentColor"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        />
-                    </svg>
-                </div>
-            </button>
-
-            {/* BODY */}
             <motion.div
-                id={`skills-${category}`}
-                initial={false}
-                animate={open ? "open" : "closed"}
-                variants={{
-                    open: { height: "auto", opacity: 1 },
-                    closed: { height: 0, opacity: 0 },
+                className="absolute inset-0 rounded-2xl bg-[var(--bg-primary)] border border-white/10 shadow-md"
+                animate={{ rotateY: flipped ? 180 : 0 }}
+                transition={{ duration: 0.6, ease: "easeInOut" }}
+                style={{
+                    transformStyle: "preserve-3d",
                 }}
-                transition={{ duration: 0.28 }}
-                className="px-5 overflow-hidden"
             >
-                <div className="py-4 pb-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {/* FRONT SIDE */}
+                <div
+                    className="absolute inset-0 p-6 flex flex-col justify-between"
+                    style={{
+                        backfaceVisibility: "hidden",
+                    }}
+                >
+                    <div className="flex items-center justify-between">
+                        <div className="text-xl font-semibold text-white">
+                            {category}
+                        </div>
+
+                        {/* CATEGORY ICON / MINIMAL SYMBOL */}
+                        <div className="text-slate-400 opacity-60">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M6 9l6 6 6-6"
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div className="text-sm text-slate-400">
+                        {items.length} skills
+                    </div>
+                    <div className="text-xs text-slate-500">(Tap to flip)</div>
+                </div>
+
+                {/* BACK SIDE */}
+                <div
+                    className="absolute inset-0 p-4 grid grid-cols-1 gap-2 overflow-y-auto bg-[var(--bg-secondary)] rounded-2xl border border-white/10 custom-scroll"
+                    style={{
+                        transform: "rotateY(180deg)",
+                        backfaceVisibility: "hidden",
+                    }}
+                >
                     {items.map((it) => (
                         <div
                             key={it.name}
-                            className="inline-flex items-center gap-3 px-3 py-2 rounded-md 
-                                       bg-[rgba(255,255,255,0.03)] border border-white/5 
-                                       hover:bg-white/10 transition"
+                            className="flex items-center gap-3 px-3 py-2 bg-[rgba(255,255,255,0.04)] border border-white/10 rounded-md hover:bg-white/10 transition"
                         >
                             {it.icon ? (
                                 <img
                                     src={it.icon}
-                                    alt={`${it.name} icon`}
-                                    className="w-5 h-5 object-contain opacity-90"
+                                    alt={it.name}
+                                    className="w-5 h-5 object-contain"
                                 />
                             ) : (
                                 <div className="w-5 h-5 rounded-sm bg-white/10" />
                             )}
-                            <div className="text-sm text-white/90">{it.name}</div>
+                            <span className="text-white text-sm">{it.name}</span>
                         </div>
                     ))}
                 </div>
             </motion.div>
-        </div>
+        </motion.div>
     );
 }
