@@ -15,10 +15,22 @@ export const metadata = {
     "Next.js Developer",
     "Chandigarh University CSE",
     "Data Analyst",
-    "Portfolio"
-  ]
+    "Portfolio",
+    "UI UX Designer",
+    "AI Developer",
+    "Tech Stack",
+    "Jagriti Sachdeva Portfolio",
+    "Developer Skills",
+    "Designing Methods",
+  ],
+  openGraph: {
+    title: "Jagriti — Tech Stack",
+    description:
+      "Detailed technical skillset across Frontend, Backend, Data Analytics, AI/ML, and UI/UX.",
+    url: "https://your-portfolio-url.com",
+    siteName: "Jagriti Portfolio",
+  },
 };
-
 
 export default function RootLayout({ children }) {
   // const [theme, setTheme] = useState("dark");

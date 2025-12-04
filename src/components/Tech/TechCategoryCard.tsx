@@ -67,7 +67,7 @@ export default function TechCategoryCard({
 
                 {/* BACK SIDE */}
                 <div
-                    className="absolute inset-0 p-4 grid grid-cols-1 gap-2 overflow-y-auto bg-[var(--bg-secondary)] rounded-2xl border border-white/10 custom-scroll"
+                    className="absolute inset-0 p-4 grid grid-cols-2 gap-2 overflow-y-auto bg-[var(--bg-primary)] rounded-2xl border border-white/10 custom-scroll"
                     style={{
                         transform: "rotateY(180deg)",
                         backfaceVisibility: "hidden",

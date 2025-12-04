@@ -1,59 +1,72 @@
-export type ExperienceItem = {
-    id: string;
-    company: string;
-    role: string;
-    duration: string;
-    description: string[];
-    category: string; // used for filtering
-};
-
-export const EXPERIENCE: ExperienceItem[] = [
+export const EXPERIENCE = [
     {
-        id: "twinline-interview",
-        company: "Twinline Business Solution",
-        role: "PL/SQL + Oracle Intern (Interview Prep)",
-        duration: "2025",
+        id: "nxtsites-fullstack",
+        company: "NxtSites",
+        role: "Full Stack Developer",
+        duration: "Dec 2024 – Present",
+        category: "Frontend",
         description: [
-            "Prepared core PL/SQL basics, queries, joins & DB fundamentals.",
-            "Gained understanding of Oracle RDBMS, basic DBA, indexing & views.",
-            "Practiced analytical reasoning and SQL writing."
-        ],
-        category: "Database"
+            "Developing full-stack web apps using Next.js, Node.js, PostgreSQL and Tailwind.",
+            "Created modular UI components and optimized API routes.",
+            "Designed scalable backend systems with authentication and secure role-based routing.",
+            "Improved performance through caching, code-splitting and optimization strategies.",
+            "Collaborated with design teams to ship responsive, modern interfaces."
+        ]
     },
+
     {
-        id: "emotion-research",
+        id: "grownity-uiux",
+        company: "Grownity",
+        role: "UI/UX Designer",
+        duration: "Aug 2022 – Dec 2023",
+        category: "UI/UX",
+        description: [
+            "Reduced render time of user buddy lists by 75% through optimized UI layouts.",
+            "Designed scalable Figma component libraries for rapid development.",
+            "Conducted UX analysis to refine flows and improve navigation experience.",
+            "Delivered responsive prototypes improving user clarity and engagement.",
+            "Maintained consistent design systems aligned with brand identity."
+        ]
+    },
+
+    {
+        id: "coincent-intern",
+        company: "Coincent",
+        role: "Web Development Intern",
+        duration: "Oct 2023 – Dec 2023",
+        category: "Frontend",
+        description: [
+            "Developed a PHP-based Doctor Dashboard with role-based UIs.",
+            "Applied advanced HTML5, CSS3 and JavaScript for responsive layouts.",
+            "Implemented structured components and reusable UI modules.",
+            "Delivered high-quality tasks with clean documentation and precision."
+        ]
+    },
+
+    {
+        id: "coincent-trainee",
+        company: "Coincent",
+        role: "Web Developer Trainee",
+        duration: "Feb 2022 – Mar 2022",
+        category: "Frontend",
+        description: [
+            "Completed intensive training in HTML, CSS and responsive design.",
+            "Built multiple static web pages following modern web standards.",
+            "Strengthened fundamentals in accessibility, media queries and layout systems."
+        ]
+    },
+
+    {
+        id: "ai-research",
         company: "Independent Research",
         role: "Researcher — Emotion & Mental State Analysis",
-        duration: "2024–2025",
+        duration: "2024 – 2025",
+        category: "AI/ML",
         description: [
-            "Researched transformers (BERT, RoBERTa) for emotion classification.",
-            "Built datasets and pipelines for text-based psychological inference.",
-            "Published research papers with deep learning experimentation."
-        ],
-        category: "AI/ML"
+            "Researched BERT and RoBERTa models for emotion classification.",
+            "Created preprocessing pipelines and dataset workflows.",
+            "Conducted ML experiments and comparative model evaluations.",
+            "Developed AI dashboards for psychological signal interpretation."
+        ]
     },
-    {
-        id: "frontend-react",
-        company: "Freelance",
-        role: "Frontend Developer",
-        duration: "2022–2024",
-        description: [
-            "Designed responsive React-based web interfaces.",
-            "Worked with Tailwind, Framer Motion & API integrations.",
-            "Focused on clean UX, animations & mobile-first builds."
-        ],
-        category: "Frontend"
-    },
-    {
-        id: "content-writing",
-        company: "Freelance",
-        role: "Technical Writer",
-        duration: "2023–2024",
-        description: [
-            "Drafted structured documentation & tutorials for clients.",
-            "Worked on research papers, blog articles & UI/UX writing.",
-            "Specialized in simplifying complex technical concepts."
-        ],
-        category: "Writing"
-    }
 ];
