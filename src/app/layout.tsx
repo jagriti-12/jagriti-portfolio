@@ -22,6 +22,12 @@ export const metadata = {
     "Jagriti Sachdeva Portfolio",
     "Developer Skills",
     "Designing Methods",
+    "Certifications",
+    "Oracle Cloud Certification",
+    "IBM AI Engineering",
+    "Google UX Design",
+    "Tableau Data Analytics",
+    "Meta JavaScript",
   ],
   openGraph: {
     title: "Jagriti — Tech Stack",

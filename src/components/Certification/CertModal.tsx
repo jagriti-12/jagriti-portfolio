@@ -23,7 +23,7 @@ export default function CertModal({
 
                 <div className="mt-4 w-full h-64 bg-white/10 rounded-xl flex items-center justify-center overflow-hidden">
                     {cert.image ? (
-                        <img src={cert.image} className="w-full h-full object-contain" alt={cert.title} />
+                        <img src={cert.image} className="w-full h-full object-contain" alt={`${cert.title} certification by ${cert.issuer}`} />
                     ) : (
                         <span className="text-xs text-slate-400">No Preview</span>
                     )}
