@@ -10,7 +10,7 @@ export const TECH_STACK: TechItem[] = [
     { name: "React", category: "Frontend", icon: "/icons/react.svg" },
     { name: "Next.js", category: "Frontend", icon: "/icons/nextjs.svg" },
     { name: "Tailwind", category: "Frontend", icon: "/icons/tailwind.svg" },
-    { name: "Type Script", category: "Frontend", icon: "/icons/typescript.svg" },
+    { name: "TypeScript", category: "Frontend", icon: "/icons/typescript.svg" },
     { name: "HTML", category: "Frontend", icon: "/icons/html.svg" },
     { name: "CSS", category: "Frontend", icon: "/icons/css.svg" },
 
@@ -18,8 +18,8 @@ export const TECH_STACK: TechItem[] = [
     { name: "python", category: "Backend", icon: "/icons/python.svg" },
     { name: "Node.js", category: "Backend", icon: "/icons/nodejs.svg" },
     { name: "Java", category: "Backend", icon: "/icons/java.svg" },
-    { name: "Java Script", category: "Backend", icon: "/icons/javascript.svg" },
-    { name: "Exp.js", category: "Backend", icon: "/icons/ex.svg" },
+    { name: "JavaScript", category: "Backend", icon: "/icons/javascript.svg" },
+    { name: "Express.js", category: "Backend", icon: "/icons/ex.svg" },
     { name: "Django", category: "Backend", icon: "/icons/django.svg" },
     { name: "PHP", category: "Backend", icon: "/icons/php.svg" },
 
@@ -39,10 +39,10 @@ export const TECH_STACK: TechItem[] = [
     // UI / UX
     { name: "Figma", category: "UI/UX", icon: "/icons/figma.svg" },
     { name: "Adobe XD", category: "UI/UX", icon: "/icons/adobexd.svg" },
-    { name: "Proto- typing", category: "UI/UX", icon: "/icons/prototype.svg" },
-    { name: "Wire- framing", category: "UI/UX", icon: "/icons/wireframe.svg" },
+    { name: "Prototyping", category: "UI/UX", icon: "/icons/prototype.svg" },
+    { name: "Wireframing", category: "UI/UX", icon: "/icons/wireframe.svg" },
     { name: "Adobe Creative", category: "UI/UX", icon: "/icons/adobecreative.svg" },
-    { name: "Graphic Designing", category: "UI/UX", icon: "/icons/graphic.svg" },
+    { name: "Illustrations", category: "UI/UX", icon: "/icons/graphic.svg" },
     { name: "Framer", category: "UI/UX", icon: "/icons/framer.svg" },
 
     // Tools / DevOps
@@ -51,6 +51,7 @@ export const TECH_STACK: TechItem[] = [
     { name: "Vercel", category: "Tools", icon: "/icons/vercel.svg" },
     { name: "Docker", category: "Tools", icon: "/icons/docker.svg" },
     { name: "Xampp", category: "Tools", icon: "/icons/xampp.svg" },
+    { name: "Postman", category: "Tools", icon: "/icons/postman.svg" },
 
     // Databases (optional category)
     { name: "Mongo DB", category: "Databases", icon: "/icons/mongodb.svg" },
