@@ -75,7 +75,7 @@ export default function RootLayout({ children }) {
 
       </head>
       {/* <html lang="en" className={theme === "light" ? "light" : ""}> */}
-      <body className={`${inter.className} bg-darkBg text-white`}>
+      <body suppressHydrationWarning className={`${inter.className}${inter.className} bg-darkBg text-white` }>
 
         {/* This file runs client code */}
         <ContextProvider />
