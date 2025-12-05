@@ -9,7 +9,6 @@ import ExperienceSection from "@/components/Experience";
 import CertificationsSection from "@/components/Certification";
 import ResumeSection from "@/components/Resume";
 import ContactSection from "@/components/Contact/ContactSection";
-import { PROJECTS } from "@/components/Projects/project-data";
 
 /**
  * The Home page component of the application.
@@ -37,3 +36,4 @@ export default function Home() {
     </>
   );
 }
+// Jagriti
