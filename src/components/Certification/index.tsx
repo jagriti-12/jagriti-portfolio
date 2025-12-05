@@ -13,7 +13,7 @@ export default function CertificationsSection() {
     const filtered = CERTIFICATIONS.filter((c) => c.category === active);
 
     return (
-        <section id="certifications" className="py-24 px-6">
+        <section id="certifications" className="py-24 px-6 bg-[var(--bg-secondary)]">
             <div className="mx-auto max-w-6xl">
                 <h2 className="text-4xl font-bold mb-6">Certifications</h2>
 

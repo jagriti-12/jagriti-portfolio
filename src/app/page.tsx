@@ -5,7 +5,7 @@ import ProjectsSection from "@/components/Projects";
 import AboutSection from "@/components/About";
 import TechSection from "@/components/Tech";
 import ExperienceSection from "@/components/Experience";
-import EducationSection from "@/components/Education";
+// import EducationSection from "@/components/Education";
 import CertificationsSection from "@/components/Certification";
 import ResumeSection from "@/components/Resume";
 import ContactSection from "@/components/Contact/ContactSection";
@@ -27,7 +27,7 @@ export default function Home() {
         <ProjectsSection />
         <TechSection />
         <ExperienceSection />
-        <EducationSection />
+        {/* <EducationSection /> */}
         <CertificationsSection />
         <ResumeSection />
         <ContactSection />

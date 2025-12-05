@@ -1,7 +1,7 @@
 export const EXPERIENCE = [
     {
-        id: "nxtsites-fullstack",
-        company: "NxtSites",
+        id: "nxtservices-fullstack",
+        company: "Nxt Services",
         role: "Full Stack Developer",
         duration: "Dec 2024 – Present",
         category: "Frontend",

@@ -18,19 +18,30 @@ export default function AboutSection() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
-                    className="flex justify-center"
+                    className="flex flex-col items-center gap-4"
                 >
+                    {/* PHOTO */}
                     <div className="w-80 h-80 md:w-96 md:h-96 rounded-3xl overflow-hidden 
-                        shadow-lg border border-white/10 bg-neutral-900/20"
-                    >
+        shadow-lg border border-white/10 bg-neutral-900/20">
                         <img
                             src="/images/profile/profile.jpg"
-                            alt="Jagriti Sachdeva - Profile Photo"
+                            alt="Jagriti"
                             className="w-full h-full object-cover"
-                            loading="lazy"
                         />
                     </div>
+                    {/* EDUCATION BADGE */}
+                    <div className="w-80 md:w-96 py-4 px-5 rounded-2xl backdrop-blur-md bg-[var(--bg-primary)] border border-white/40 shadow-glow text-center
+    ">
+                        <h3 className="text-sm font-semibold text-white/90">B.E. in Computer Science Engineering</h3>
+                        <p className="text-xs text-slate-400 mt-1">
+                            Chandigarh University • 2021–2025
+                        </p>
+                        <p className="text-xs text-slate-400">
+                            <b className="text-yellow-200">CGPA: 8.37</b>
+                        </p>
+                    </div>
                 </motion.div>
+
 
                 {/* TEXT CONTENT */}
                 <motion.div
