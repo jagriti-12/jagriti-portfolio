@@ -1,33 +1,39 @@
+// resume-data.ts
 export type ResumeItem = {
+    id: string;
     role: string;
-    short: string;     // one-line summary for UI + AI
-    file: string;      // PDF link from public/resumes/
+    short: string;
+    file: string;      // PDF path
+    keywords: string[]; // SEO tags
 };
 
 export const RESUMES: ResumeItem[] = [
     {
-        role: "Frontend Developer",
-        short: "Expert in React, Next.js, Tailwind, UI/UX, animations.",
-        file: "/resumes/frontend.pdf"
+        id: "web-dev",
+        role: "Web Developer",
+        short: "Skilled in React, Next.js, Tailwind, UI/UX & responsive development.",
+        file: "/resumes/frontend.pdf",
+        keywords: ["React", "Next.js", "Frontend Developer", "UI UX", "Web Developer Resume"]
     },
     {
-        role: "AI / ML Engineer",
-        short: "Worked with BERT, transformers, deep learning & NLP.",
-        file: "/resumes/ai.pdf"
+        id: "java-dev",
+        role: "Java Developer",
+        short: "Core Java, OOP, JDBC, SQL, Spring concepts & backend architecture.",
+        file: "/resumes/Jagriti_Java_Developer.pdf",
+        keywords: ["Java", "Backend", "OOP", "Java Developer Resume"]
     },
     {
-        role: "Researcher",
-        short: "Multiple research papers in ML, NLP, and deepfake detection.",
-        file: "/resumes/research.pdf"
+        id: "python-dev",
+        role: "Python Developer",
+        short: "Python, Django, APIs, automation & backend scripting experience.",
+        file: "/resumes/Jagriti_India_PythonDeveloper.pdf",
+        keywords: ["Python", "Django", "APIs", "Backend", "Python Developer Resume"]
     },
     {
-        role: "Technical Writer",
-        short: "Clear documentation, technical blogs, and research writing.",
-        file: "/resumes/writer.pdf"
-    },
-    {
-        role: "System Architect",
-        short: "Designed dashboards, architecture diagrams & workflows.",
-        file: "/resumes/architect.pdf"
+        id: "data-analyst",
+        role: "Data Analyst",
+        short: "Data cleaning, SQL, Power BI, Excel, visualization & reporting.",
+        file: "/resumes/Jagriti_Data_Analyst.pdf",
+        keywords: ["Data Analyst", "Power BI", "SQL", "Visualization Resume"]
     }
 ];
