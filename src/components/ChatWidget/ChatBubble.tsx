@@ -1,7 +1,9 @@
 export default function ChatBubbleIcon() {
     return (
-        <div className="w-14 h-14 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center shadow-lg text-white text-sm font-semibold">
-            AI
+        <div className="w-20 h-20 rounded-full flex items-center justify-center shadow-lg text-white text-sm font-semibold">
+            {/* Image */}
+            <img src="3dmodel.png" alt="Avatar" />
+            Hey! Ask My Bot
         </div>
     );
 }
