@@ -124,33 +124,60 @@ The AI bot pulls from *only* this context to ensure:
 ## 📂 Folder Structure
 
 src/
+
 ├── app/
+
 │ ├── api/
+
 │ │ └── chat/
+
 │ │ ├── route.ts # AI API endpoint
+
 │ ├── layout.tsx
+
 │ └── page.tsx
+
 │
 ├── components/
+
 │ ├── Hero/
+
 │ ├── Navbar/
+
 │ ├── About/
+
 │ ├── Projects/
+
 │ ├── Tech/
+
 │ ├── Experience/
+
 │ ├── Certifications/
+
 │ └── Resume/
+
 │
+
 ├── lib/
+
 │ └── jagriti-context.ts # AI knowledge base
+
 │
+
 ├── public/
+
 │ ├── images/
+
 │ ├── icons/
+
 │ ├── 3dmodel.png
+
 │ └── resumes/*.pdf
+
 │
+
 └── styles/
+
 └── globals.css
 
 ---
@@ -165,18 +192,23 @@ cd jagriti-portfolio
 ```
 
 2️⃣ Install dependencies
+```
 npm install
+```
 
 3️⃣ Add environment variables
-
+```
 Create .env.local:
+```
 
 GROQ_API_KEY=your_groq_key
 EMAIL_USER=your_email@gmail.com
 EMAIL_PASS=your_app_password
 
 4️⃣ Start development server
+```
 npm run dev
+```
 
 🧠 AI Assistant Logic (Simplified)
 Steps:
