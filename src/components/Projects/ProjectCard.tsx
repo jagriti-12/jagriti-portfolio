@@ -1,30 +1,29 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Project } from "./projects-data";
+import { motion } from "framer-motion";
 
 export default function ProjectCard({ project, onOpen }: { project: Project; onOpen: (p: Project) => void }) {
     return (
         <motion.div
-            layout
-            whileHover={{ scale: 1.03 }}
-            className="p-4 bg-white/5 rounded-2xl border border-white/10 cursor-pointer shadow-soft hover:shadow-glow transition"
+            whileHover={{ scale: 1.04 }}
+            className="rounded-2xl p-4 bg-white/5 border border-white/10 cursor-pointer transition shadow-soft"
             onClick={() => onOpen(project)}
         >
-            <div className="w-full h-40 bg-white/10 rounded-xl mb-3 flex items-center justify-center overflow-hidden">
-                {project.image ? (
-                    <img src={project.image} alt={project.title} className="w-full h-full object-cover rounded-xl" />
+            <div className="w-full h-40 rounded-xl overflow-hidden bg-white/10 flex items-center justify-center">
+                {project.images?.[0] ? (
+                    <img src={project.images[0]} className="w-full h-full object-cover" />
                 ) : (
-                    <span className="text-xs text-slate-400">No Image</span>
+                    <p className="text-slate-400 text-xs">No Preview</p>
                 )}
             </div>
 
-            <h3 className="text-lg font-semibold">{project.title}</h3>
-            <p className="text-sm text-slate-400 mt-1">{project.description}</p>
+            <h3 className="mt-4 text-lg font-semibold">{project.title}</h3>
+            <p className="text-sm text-slate-400 line-clamp-2 mt-1">{project.short}</p>
 
-            <div className="flex flex-wrap gap-2 mt-3">
-                {project.tech.map((t) => (
-                    <span key={t} className="px-2 py-1 text-xs rounded bg-white/10">
+            <div className="flex flex-wrap gap-2 text-xs mt-3">
+                {project.tech.slice(0, 4).map(t => (
+                    <span key={t} className="px-2 py-1 rounded bg-white/5 border border-white/10">
                         {t}
                     </span>
                 ))}

@@ -48,8 +48,7 @@ export default function ResumeSection() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4 }}
-                        className="w-full h-[520px] rounded-xl overflow-hidden 
-                                   bg-[rgba(255,255,255,0.03)] border border-white/10 shadow-inner"
+                        className="w-full h-[520px] rounded-xl overflow-hidden bg-[rgba(255,255,255,0.03)] border border-white/10 shadow-inner"
                     >
                         {current?.file ? (
                             <iframe

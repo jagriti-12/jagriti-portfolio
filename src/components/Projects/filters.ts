@@ -17,3 +17,13 @@ export const filterProjects = (
         return roleMatch && techMatch;
     });
 };
+export const PROJECT_FILTERS = [
+    "All",
+    "Frontend",
+    "Fullstack",
+    "AI/ML",
+    "Python",
+    "Java",
+    "SQL",
+    "Data",
+];

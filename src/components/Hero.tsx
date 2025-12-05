@@ -24,7 +24,7 @@ export default function Hero() {
                         <br /><br />
                         Recent Computer Science graduate from
                         <i> <u>Chandigarh University</u></i> exploring the realm of
-                    <strong> frontend development, user experience design, and data insights.</strong>
+                    <strong> Frontend Development, User Experience Design, and Data Insights.</strong>
                 </motion.p>
                 {/* CTA Buttons */}
                 <div className="mt-6 flex gap-3">

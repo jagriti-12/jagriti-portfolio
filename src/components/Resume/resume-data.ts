@@ -10,7 +10,7 @@ export type ResumeItem = {
 export const RESUMES: ResumeItem[] = [
     {
         id: "web-dev",
-        role: "Web Developer",
+        role: "Frontend Developer",
         short: "Skilled in React, Next.js, Tailwind, UI/UX & responsive development.",
         file: "/resumes/frontend.pdf",
         keywords: ["React", "Next.js", "Frontend Developer", "UI UX", "Web Developer Resume"]
@@ -35,5 +35,19 @@ export const RESUMES: ResumeItem[] = [
         short: "Data cleaning, SQL, Power BI, Excel, visualization & reporting.",
         file: "/resumes/Jagriti_Data_Analyst.pdf",
         keywords: ["Data Analyst", "Power BI", "SQL", "Visualization Resume"]
-    }
+    },
+    {
+        id: "UI/UX Designer",
+        role: "UI/UX Designer",
+        short: "User research, Wireframes, prototyping, visual UI systems.",
+        file: "/resumes/Jagriti_UI_UX_DESIGNER.pdf",
+        keywords: ["Design", "Figma", "Adobe XD", "Prototyping", "UI/UX Resume"]
+    },
+    // {
+    //     id: "UI/UX Designer",
+    //     role: "UI/UX Designer",
+    //     short: "User research, Wireframes, prototyping, visual UI systems.",
+    //     file: "/resumes/Jagriti_UI_UX_DESIGNER.pdf",
+    //     keywords: ["Design", "Figma", "Adobe XD", "Prototyping", "UI/UX Resume"]
+    // }
 ];
