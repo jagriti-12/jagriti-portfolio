@@ -8,7 +8,7 @@ export const filterProjects = (
     selectedTechs: string[]
 ) => {
     return projects.filter((p) => {
-        const roleMatch = selectedRole ? p.roles.includes(selectedRole) : true;
+        const roleMatch = selectedRole ? p.category === (selectedRole) : true;
         const techMatch =
             selectedTechs.length === 0
                 ? true

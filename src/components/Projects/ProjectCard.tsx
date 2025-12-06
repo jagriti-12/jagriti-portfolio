@@ -2,7 +2,6 @@
 
 import { Project } from "./projects-data";
 import { motion } from "framer-motion";
-
 export default function ProjectCard({ project, onOpen }: { project: Project; onOpen: (p: Project) => void }) {
     return (
         <motion.div

@@ -191,121 +191,126 @@ git clone https://github.com/jagriti-12/jagriti-portfolio.git
 cd jagriti-portfolio
 ```
 
-2️⃣ Install dependencies
+### 2️⃣ Install dependencies
 ```
 npm install
 ```
 
-3️⃣ Add environment variables
+### 3️⃣ Add environment variables
 ```
 Create .env.local:
 ```
-GROQ_API_KEY=your_groq_key
+| GROQ_API_KEY=your_groq_key
 
-EMAIL_USER=your_email@gmail.com
+| EMAIL_USER=your_email@gmail.com
 
-EMAIL_PASS=your_app_password
+| EMAIL_PASS=your_app_password
 
-4️⃣ Start development server
+### 4️⃣ Start development server
 ```
 npm run dev
 ```
 
-🧠 AI Assistant Logic (Simplified)
-Steps:
+### 🧠 AI Assistant Logic (Simplified)
 
-Detect recruiter intent
+### Steps:
 
-Query Groq LLM
+1. Detect recruiter intent
 
-Plug in system-level context
+2. Query Groq LLM
 
-Apply one-liner response formatting
+3. Plug in system-level context
 
-Append resume suggestion
+4. Apply one-liner response formatting
 
-Return clean JSON to frontend widget
+5. Append resume suggestion
 
-route.ts (Core Engine)
+6. Return clean JSON to frontend widget
 
-Detects roles: frontend / ai / research / writing / system architect
+7. route.ts (Core Engine)
 
-Injects full JAGRITI_CONTEXT
+8. Detects roles: frontend / ai / research / writing / system architect
 
-Cleans response
+9. Injects full JAGRITI_CONTEXT
 
-Limits to concise output
+10. Cleans response
 
-Ensures reliability
+11. Limits to concise output
 
-🎯 Deploying
+12. Ensures reliability
 
-Deployed using:
+### 🎯 Deploying
+
+#### Deployed using:
 
 Vercel → Next.js App Router → CI/CD
 
 
-Auto-optimizations:
+#### Auto-optimizations:
 
-Image optimization
+1. Image optimization
 
-Edge caching
+2. Edge caching
 
-API routes serverless execution
+3. API routes serverless execution
 
-🎨 UI Highlights
+### 🎨 UI Highlights
 
-Glassmorphism navbar
+- Glassmorphism navbar
 
-Smooth hero animations
+- Smooth hero animations
 
-Beautiful flip cards
+- Beautiful flip cards
 
-Fully responsive layouts
+- Fully responsive layouts
 
-Timeline experience
+- Timeline experience
 
-Interactive modals
+- Interactive modals
 
-📞 Contact
+### 📞 Contact
 
-Portfolio: https://jagriti-portfolio.vercel.app
+> Portfolio: https://jagriti-portfolio.vercel.app
 
-GitHub: https://github.com/jagriti-12
+> GitHub: https://github.com/jagriti-12
 
-LinkedIn: https://www.linkedin.com/in/jagriti-sachdeva
+> LinkedIn: https://www.linkedin.com/in/jagriti-sachdeva
 
-Email: jags.jagriti12@gmail.com
+> Email: jags.jagriti12@gmail.com
 
-⭐ Contributing
+--- 
+## ⭐ Contributing
 
 This is a personal project.
 Forks welcome — PRs optional 🤍
 If you find UI or animation improvements, feel free to suggest!
 
-🛡 License
+## 🛡 License
 
 This project is private-use only.
 Do not copy content, AI logic, context file or designs without permission.
 
-💛 Acknowledgements
+## 💛 Acknowledgements
 
-Special thanks to:
+### Special thanks to:
 
-Groq for providing an extremely fast LLM API
+- Groq for providing an extremely fast LLM API
 
-Next.js team for App Router
+- Next.js team for App Router
 
-TailwindCSS for making styling expressive
+- TailwindCSS for making styling expressive
 
-Framer Motion for beautiful animations
+- Framer Motion for beautiful animations
 
-🎉 Final Note
+---
+
+## 🎉 Final Note
 
 This portfolio is a reflection of Jagriti’s evolving engineering journey — blending frontend precision, AI research, and design intuition into a single polished digital experience.
 
-If you're a recruiter:
+### If you're a recruiter:
 You're in good hands. Jagriti learns fast, works hard, and builds beautifully.
+
 ---
 <a href="https://github.com/jagriti-12/jagriti-portfolio/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=jagriti-12/jagriti-portfolio" />
