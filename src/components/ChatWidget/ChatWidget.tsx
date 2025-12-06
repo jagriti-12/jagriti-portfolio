@@ -59,7 +59,7 @@ export default function ChatWidget() {
     const send = () => sendMessage(value);
 
     const quickSend = (msg: string) => {
-        sendMessage(msg); // autosend
+        sendMessage(msg);
     };
 
     const handleKey = (e: any) => {
@@ -94,8 +94,8 @@ export default function ChatWidget() {
                                 >
                                     <div
                                         className={`max-w-[80%] px-3 py-2 rounded-lg ${m.from === "bot"
-                                                ? "bg-white/6"
-                                                : "bg-gradient-to-r from-primary to-accent text-white"
+                                            ? "bg-white/6"
+                                            : "bg-gradient-to-r from-primary to-accent text-white"
                                             }`}
                                     >
                                         {m.text}

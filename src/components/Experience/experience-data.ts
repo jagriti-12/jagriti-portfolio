@@ -1,3 +1,11 @@
+export interface ExperienceItem {
+    id: string;
+    role: string;
+    company: string;
+    duration: string;
+    description: string[];
+    category: string;
+}
 export const EXPERIENCE = [
     {
         id: "nxtservices-fullstack",

@@ -4,6 +4,33 @@ import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { FaCheckCircle } from "react-icons/fa";
 
+interface InquiryData {
+    name: string;
+    email: string;
+    company: string;
+    role: string;
+    contactType: string;
+    urgency: string;
+    subject: string;
+    message: string;
+    budget: string;
+    timeline: string;
+}
+
+interface InquiryErrors {
+    name?: string;
+    email?: string;
+    company?: string;
+    role?: string;
+    contactType?: string;
+    urgency?: string;
+    subject?: string;
+    message?: string;
+    budget?: string;
+    timeline?: string;
+    submit?: string;
+}
+
 const CONTACT_TYPES = [
     { id: "job", label: "Job Opportunity", icon: "" },
     { id: "project", label: "Project Collaboration", icon: "" },
@@ -19,7 +46,7 @@ const URGENCY = [
 ];
 
 export default function JagritiInquiryForm() {
-    const [data, setData] = useState({
+    const [data, setData] = useState<InquiryData>({
         name: "",
         email: "",
         company: "",
@@ -31,14 +58,21 @@ export default function JagritiInquiryForm() {
         budget: "",
         timeline: ""
     });
-    const [errors, setErrors] = useState<any>({});
+    const [errors, setErrors] = useState<InquiryErrors>({});
     const [submitting, setSubmitting] = useState(false);
     const [sent, setSent] = useState(false);
     const ref = useRef<HTMLFormElement | null>(null);
 
-    function handleChange(e: any) {
+    function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) {
         setData(prev => ({ ...prev, [e.target.name]: e.target.value }));
-        if (errors[e.target.name]) setErrors(prev => ({ ...prev, [e.target.name]: "" }));
+        const { name } = e.target;
+
+        if (errors[name as keyof InquiryErrors]) {
+            setErrors(prev => ({
+                ...prev,
+                [name]: ""
+            }));
+        }
     }
 
     function validate() {

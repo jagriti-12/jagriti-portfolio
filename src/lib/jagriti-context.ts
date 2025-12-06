@@ -244,3 +244,14 @@ export const JAGRITI_CONTEXT = {
         "Fast learner with strong debugging & problem-solving"
     ]
 };
+
+
+// Extend the global Window interface so TypeScript stops crying
+declare global {
+    interface Window {
+        __JAGRITI_CONTEXT?: Record<string, any>;
+    }
+}
+
+// This export is required so the file is treated as a module
+export { };
