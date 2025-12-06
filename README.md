@@ -1,3 +1,9 @@
+<p align="center"> <img src="https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=nextdotjs" /> <img src="https://img.shields.io/badge/TailwindCSS-3.4-blue?style=for-the-badge&logo=tailwindcss" /> <img src="https://img.shields.io/badge/TypeScript-Strict-3178C6?style=for-the-badge&logo=typescript" /> <img src="https://img.shields.io/badge/Framer--Motion-Animations-F50057?style=for-the-badge&logo=framer" /> <img src="https://img.shields.io/badge/Groq-LLM-orange?style=for-the-badge&logo=groq" /> <img src="https://img.shields.io/badge/Deployed_on-Vercel-black?style=for-the-badge&logo=vercel" /> </p> <p align="center"> <img src="https://img.shields.io/github/last-commit/jagriti-12/jagriti-portfolio?style=flat-square&color=yellow" /> <img src="https://img.shields.io/github/languages/top/jagriti-12/jagriti-portfolio?style=flat-square&color=blueviolet" /> <img src="https://img.shields.io/github/repo-size/jagriti-12/jagriti-portfolio?style=flat-square&color=brightgreen" /> <img src="https://img.shields.io/badge/Made_With-%E2%9D%A4-red?style=flat-square" /> </p>
+
+---
+
+<p align="center"> <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=600&size=28&duration=3000&pause=1200&color=F7DD56&center=true&vCenter=true&width=900&lines=AI+Powered+Next.js+Portfolio+%E2%9A%A1;Interactive+Animations+%7C+Framer+Motion;LLM+Integrated+Chat+Assistant;Showcasing+Frontend%2C+AI%2C+Research%2C+UI%2FUX;Built+With+Precision+and+Love+by+Jagriti+Sachdeva" /></p>
+
 # 🌐 Jagriti Portfolio — Modern Next.js 2025 | AI-Enhanced Developer Portfolio
 
 A highly interactive, fully animated, AI-powered portfolio built with **Next.js 14**, **TailwindCSS**, **Framer Motion**, and a custom **Groq LLM Assistant**.  
