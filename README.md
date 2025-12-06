@@ -200,11 +200,11 @@ npm install
 ```
 Create .env.local:
 ```
-| GROQ_API_KEY=your_groq_key
+> GROQ_API_KEY=your_groq_key
 
-| EMAIL_USER=your_email@gmail.com
+> EMAIL_USER=your_email@gmail.com
 
-| EMAIL_PASS=your_app_password
+> EMAIL_PASS=your_app_password
 
 ### 4️⃣ Start development server
 ```
