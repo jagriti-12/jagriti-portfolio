@@ -90,6 +90,17 @@ export const PROJECTS: Project[] = [
         images: ["images/projects/soulmap.png"]
     },
     {
+        id: "edoc",
+        title: "PHP Based - eDoc: Appointment System",
+        short: "A PHP Based, doc appointment system, find > select > schedule > meet!",
+        long: "A hassle free appointment booking system, Connect hassle free!",
+        category: "Fullstack",
+        tech: ["PHP", "SQL", "XAMPP", "CSS"],
+        repo: "https://drive.google.com/drive/folders/1nwTI7CUitXQkVbK_4JD2cuawY2joo8_S?usp=sharing",
+        live: "https://edoc-project.netlify.app/",
+        images: ["images/projects/edoc.png"]
+    },
+    {
         id: "ui-portfolio",
         title: "AI - UI/UX Designer Portfolio Website",
         short: "AI powered UI UX Designer Portfolio Website by - FIGMA MAKE",
@@ -101,7 +112,7 @@ export const PROJECTS: Project[] = [
         images: ["images/projects/ui-portfolio.png"]
     },
     {
-        id: "ui-portfolio",
+        id: "ui-booking",
         title: "Mobile UI: Restaurant Booking App",
         short: "A vibrant restaurant booking app with appetizing visuals and smooth user flow.",
         long: "To make a prior booking to the table and food using lemon app - A restaurant booking app - UI",

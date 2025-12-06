@@ -23,7 +23,5 @@ export const PROJECT_FILTERS = [
     "Fullstack",
     "AI/ML",
     "Python",
-    "Java",
-    "SQL",
     "Data",
 ];
