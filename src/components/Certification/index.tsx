@@ -4,11 +4,10 @@ import { useState } from "react";
 import CertCard from "./CertCard";
 import CertModal from "./CertModal";
 import { CERTIFICATIONS } from "./cert-data";
+import type { Certification } from "./cert-data";   // ✅ ADD THIS
 import Script from "next/script";
 
 export default function CertificationsSection() {
-
-    // NEW UPDATED TABS
     const tabs = [
         "Cloud",
         "Programming",
@@ -19,7 +18,7 @@ export default function CertificationsSection() {
     ];
 
     const [active, setActive] = useState("Cloud");
-    const [openCert, setOpenCert] = useState(null);
+    const [openCert, setOpenCert] = useState<Certification | null>(null); // ✅ FIXED
 
     const filtered = CERTIFICATIONS.filter((c) => c.category === active);
 
