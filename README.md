@@ -4,6 +4,7 @@
 
 <p align="center"> <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=600&size=28&duration=3000&pause=1200&color=F7DD56&center=true&vCenter=true&width=900&lines=AI+Powered+Next.js+Portfolio+%E2%9A%A1;Interactive+Animations+%7C+Framer+Motion;LLM+Integrated+Chat+Assistant;Showcasing+Frontend%2C+AI%2C+Research%2C+UI%2FUX;Built+With+Precision+and+Love+by+Jagriti+Sachdeva" /></p>
 
+
 # 🌐 Jagriti Portfolio — Modern Next.js 2025 | AI-Enhanced Developer Portfolio
 
 A highly interactive, fully animated, AI-powered portfolio built with **Next.js 14**, **TailwindCSS**, **Framer Motion**, and a custom **Groq LLM Assistant**.  
@@ -107,7 +108,7 @@ This portfolio is not just a website — it’s an **experience**.
 ## 🧠 JagritiAI Context System
 This project introduces an advanced **centralized context engine**:
 
-`src/lib/jagriti-context.ts`
+> `src/lib/jagriti-context.ts`
 
 Contains structured data for:
 - About  
