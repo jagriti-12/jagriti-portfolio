@@ -33,7 +33,7 @@ export const PROJECTS: Project[] = [
         tech: ["React", "Tailwind", "Node.js", "MongoDB"],
         repo: "https://github.com/jagriti-12/employee-task-dashboard",
         live: "https://empfrontenddashboard.netlify.app/",
-        images: ["images/projects/Dashboard.png"]
+        images: ["images/projects/system.png"]
     },
     {
         id: "job-application-tracker",
