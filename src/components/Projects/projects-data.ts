@@ -14,6 +14,17 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
     {
+        id: "ride-safe-trollx",
+        title: "Ride Safe | TrollX – Multi-App Ecosystem",
+        short: "A unified customer-side experience combining ride safety and social engagement apps.",
+        long: "Designed a combination ecosystem of three interconnected apps focusing on safe commuting and community engagement. Created seamless user flows, intuitive navigation systems, and scalable UI components ensuring consistency across platforms.",
+        category: "UI/UX",
+        tech: ["Figma", "Design System", "User Flow", "Wireframing", "Prototyping"],
+        repo: "https://www.figma.com/design/qXt3fXMZTObvrDUhMeW8Gk/CutsomerSide?node-id=0-1&p=f&t=XvhqAM8YEJU0II2E-0",
+        live: "https://www.figma.com/design/qXt3fXMZTObvrDUhMeW8Gk/CutsomerSide?node-id=0-1&p=f&t=XvhqAM8YEJU0II2E-0",
+        images: ["images/projects/ride-safe.png"]
+    },
+    {
         id: "employee-dashboard",
         title: "Employee Task Management Dashboard",
         short: "A React + Node.js dashboard for managing tasks, teams & analytics.",
@@ -79,6 +90,17 @@ export const PROJECTS: Project[] = [
         images: ["images/projects/zomato.png"]
     },
     {
+        id: "fintech-app",
+        title: "FinTech Budget Tracker – Mobile App",
+        short: "A financial management mobile app focused on budgeting and expense tracking.",
+        long: "Designed a modern fintech mobile application for budget tracking and expense management with intuitive dashboards, transaction categorization, and financial insights visualization.",
+        category: "UI/UX",
+        tech: ["Figma", "FinTech UX", "Mobile UI", "Data Visualization"],
+        repo: "https://www.figma.com/design/CM2K5OvCCHU3Em6iMhIdhP/Finance-Management-Mobile-App-UI-UX-Kit-for-Budget-Tracker-Financial-Prototype-Design--Community-?node-id=7020-3430&t=OK4zxRU8LclBZ6fX-1",
+        live: "https://www.figma.com/design/CM2K5OvCCHU3Em6iMhIdhP/Finance-Management-Mobile-App-UI-UX-Kit-for-Budget-Tracker-Financial-Prototype-Design--Community-?node-id=7020-3430&t=OK4zxRU8LclBZ6fX-1",
+        images: ["images/projects/fintech.png"]
+    },
+    {
         id: "soulmap",
         title: "Mobile UI Design: Emotional Focus Prototype",
         short: "A Mobile UI Prototype - to check and track mental health.",
@@ -111,17 +133,17 @@ export const PROJECTS: Project[] = [
         live: "https://typo-access-13773766.figma.site",
         images: ["images/projects/ui-portfolio.png"]
     },
-    {
-        id: "ui-booking",
-        title: "Mobile UI: Restaurant Booking App",
-        short: "A vibrant restaurant booking app with appetizing visuals and smooth user flow.",
-        long: "To make a prior booking to the table and food using lemon app - A restaurant booking app - UI",
-        category: "UI/UX",
-        tech: ["Figma", "Prototype", "Fitt's Law", "Micro-Interaction"],
-        repo: "https://www.figma.com/design/tVzwbKK5w9UCTInn1NZtJv/LittleLemon?node-id=0-1&p=f&t=etNKFA3qU8deWLfx-0",
-        live: "https://www.figma.com/proto/tVzwbKK5w9UCTInn1NZtJv/LittleLemon?node-id=0-1&p=f&t=etNKFA3qU8deWLfx-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
-        images: ["images/projects/booking.png"]
-    },
+    // {
+    //     id: "ui-booking",
+    //     title: "Mobile UI: Restaurant Booking App",
+    //     short: "A vibrant restaurant booking app with appetizing visuals and smooth user flow.",
+    //     long: "To make a prior booking to the table and food using lemon app - A restaurant booking app - UI",
+    //     category: "UI/UX",
+    //     tech: ["Figma", "Prototype", "Fitt's Law", "Micro-Interaction"],
+    //     repo: "https://www.figma.com/design/tVzwbKK5w9UCTInn1NZtJv/LittleLemon?node-id=0-1&p=f&t=etNKFA3qU8deWLfx-0",
+    //     live: "https://www.figma.com/proto/tVzwbKK5w9UCTInn1NZtJv/LittleLemon?node-id=0-1&p=f&t=etNKFA3qU8deWLfx-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+    //     images: ["images/projects/booking.png"]
+    // },
     {
         id: "ride-safe-trollx",
         title: "Ride Safe | TrollX – Multi-App Ecosystem",
@@ -176,17 +198,6 @@ export const PROJECTS: Project[] = [
         repo: "https://www.figma.com/design/2jnO2T4bhikCCKAYOGENYr/Workly-Venture?node-id=28-217&t=7rL4k73sKUMC3v8K-1",
         live: "https://www.figma.com/design/2jnO2T4bhikCCKAYOGENYr/Workly-Venture?node-id=28-217&t=7rL4k73sKUMC3v8K-1",
         images: ["images/projects/workly.png"]
-    },
-    {
-        id: "fintech-app",
-        title: "FinTech Budget Tracker – Mobile App",
-        short: "A financial management mobile app focused on budgeting and expense tracking.",
-        long: "Designed a modern fintech mobile application for budget tracking and expense management with intuitive dashboards, transaction categorization, and financial insights visualization.",
-        category: "UI/UX",
-        tech: ["Figma", "FinTech UX", "Mobile UI", "Data Visualization"],
-        repo: "https://www.figma.com/design/CM2K5OvCCHU3Em6iMhIdhP/Finance-Management-Mobile-App-UI-UX-Kit-for-Budget-Tracker-Financial-Prototype-Design--Community-?node-id=7020-3430&t=OK4zxRU8LclBZ6fX-1",
-        live: "https://www.figma.com/design/CM2K5OvCCHU3Em6iMhIdhP/Finance-Management-Mobile-App-UI-UX-Kit-for-Budget-Tracker-Financial-Prototype-Design--Community-?node-id=7020-3430&t=OK4zxRU8LclBZ6fX-1",
-        images: ["images/projects/fintech.png"]
     },
     {
         id: "novotel-crm",
