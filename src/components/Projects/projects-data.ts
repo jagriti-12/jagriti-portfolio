@@ -122,4 +122,92 @@ export const PROJECTS: Project[] = [
         live: "https://www.figma.com/proto/tVzwbKK5w9UCTInn1NZtJv/LittleLemon?node-id=0-1&p=f&t=etNKFA3qU8deWLfx-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
         images: ["images/projects/booking.png"]
     },
+    {
+        id: "ride-safe-trollx",
+        title: "Ride Safe | TrollX – Multi-App Ecosystem",
+        short: "A unified customer-side experience combining ride safety and social engagement apps.",
+        long: "Designed a combination ecosystem of three interconnected apps focusing on safe commuting and community engagement. Created seamless user flows, intuitive navigation systems, and scalable UI components ensuring consistency across platforms.",
+        category: "UI/UX",
+        tech: ["Figma", "Design System", "User Flow", "Wireframing", "Prototyping"],
+        repo: "https://www.figma.com/design/qXt3fXMZTObvrDUhMeW8Gk/CutsomerSide?node-id=0-1&p=f&t=XvhqAM8YEJU0II2E-0",
+        live: "https://www.figma.com/design/qXt3fXMZTObvrDUhMeW8Gk/CutsomerSide?node-id=0-1&p=f&t=XvhqAM8YEJU0II2E-0",
+        images: ["images/projects/ride-safe.png"]
+    },
+    {
+        id: "legal-landing",
+        title: "Legal Services – Single Landing Webpage",
+        short: "A modern, conversion-focused legal services landing page.",
+        long: "Designed a clean and authoritative single-page website for legal services with structured information hierarchy, trust-building elements, and optimized call-to-action placements for higher engagement.",
+        category: "UI/UX",
+        tech: ["Figma", "Landing Page Design", "Typography System", "Conversion UX"],
+        repo: "https://www.figma.com/design/kCGasBumiF8t1xe7AA5p8q/AAS?node-id=117-860&t=QzmI9NhWTSZMcJU3-0",
+        live: "https://www.figma.com/design/kCGasBumiF8t1xe7AA5p8q/AAS?node-id=117-860&t=QzmI9NhWTSZMcJU3-0",
+        images: ["images/projects/legal.png"]
+    },
+    {
+        id: "pharma-ui",
+        title: "Pharma Project – Healthcare Interface Design",
+        short: "A structured healthcare interface focused on usability and accessibility.",
+        long: "Designed a pharmaceutical management interface prioritizing accessibility, data clarity, and medical-grade UI standards. Implemented clean dashboard layouts and structured data visualization components.",
+        category: "UI/UX",
+        tech: ["Figma", "Healthcare UX", "Dashboard UI", "Information Architecture"],
+        repo: "https://www.figma.com/design/K88D52ux2AMOk3C7whLar7/Pharma-Project?node-id=0-1&p=f&t=5Qw7Kqt9iM1jODPZ-0",
+        live: "https://www.figma.com/design/K88D52ux2AMOk3C7whLar7/Pharma-Project?node-id=0-1&p=f&t=5Qw7Kqt9iM1jODPZ-0",
+        images: ["images/projects/pharma.png"]
+    },
+    {
+        id: "ladakh-travel",
+        title: "Travels & Tours – Ladakh Experience Platform",
+        short: "A travel booking and experience showcase platform.",
+        long: "Designed an immersive travel and tour booking platform featuring structured itinerary flows, destination highlights, and user-friendly booking journeys to enhance exploration and engagement.",
+        category: "UI/UX",
+        tech: ["Figma", "Travel UX", "Booking Flow", "Micro-Interactions"],
+        repo: "https://www.figma.com/design/fsQ9uUoNeGychwT99pkEvT/Ladakh?node-id=107-39&p=f&t=g0n7wTUA4LWCHma0-0",
+        live: "https://www.figma.com/design/fsQ9uUoNeGychwT99pkEvT/Ladakh?node-id=107-39&p=f&t=g0n7wTUA4LWCHma0-0",
+        images: ["images/projects/ladakh.png"]
+    },
+    {
+        id: "workly-crm",
+        title: "Workly Venture – CRM/ERP Kanban System",
+        short: "A productivity-driven CRM/ERP system with Kanban workflow management.",
+        long: "Designed a structured CRM/ERP dashboard integrating Kanban-based task management, workflow tracking, and enterprise data organization to enhance operational efficiency.",
+        category: "UI/UX",
+        tech: ["Figma", "ERP UX", "Kanban System", "Dashboard Design"],
+        repo: "https://www.figma.com/design/2jnO2T4bhikCCKAYOGENYr/Workly-Venture?node-id=28-217&t=7rL4k73sKUMC3v8K-1",
+        live: "https://www.figma.com/design/2jnO2T4bhikCCKAYOGENYr/Workly-Venture?node-id=28-217&t=7rL4k73sKUMC3v8K-1",
+        images: ["images/projects/workly.png"]
+    },
+    {
+        id: "fintech-app",
+        title: "FinTech Budget Tracker – Mobile App",
+        short: "A financial management mobile app focused on budgeting and expense tracking.",
+        long: "Designed a modern fintech mobile application for budget tracking and expense management with intuitive dashboards, transaction categorization, and financial insights visualization.",
+        category: "UI/UX",
+        tech: ["Figma", "FinTech UX", "Mobile UI", "Data Visualization"],
+        repo: "https://www.figma.com/design/CM2K5OvCCHU3Em6iMhIdhP/Finance-Management-Mobile-App-UI-UX-Kit-for-Budget-Tracker-Financial-Prototype-Design--Community-?node-id=7020-3430&t=OK4zxRU8LclBZ6fX-1",
+        live: "https://www.figma.com/design/CM2K5OvCCHU3Em6iMhIdhP/Finance-Management-Mobile-App-UI-UX-Kit-for-Budget-Tracker-Financial-Prototype-Design--Community-?node-id=7020-3430&t=OK4zxRU8LclBZ6fX-1",
+        images: ["images/projects/fintech.png"]
+    },
+    {
+        id: "novotel-crm",
+        title: "Novotel – Hotel Management CRM/ERP",
+        short: "A hotel management CRM system with operational dashboards.",
+        long: "Designed a hotel management CRM/ERP system featuring booking management, customer tracking, and operational dashboards with structured enterprise workflows.",
+        category: "UI/UX",
+        tech: ["Figma", "CRM System", "ERP UX", "Enterprise Dashboard"],
+        repo: "https://www.figma.com/design/oMn0tgewdNmm2LODhn9FYj/Novotel---Hotel-Mgmt-Sys?node-id=0-1&t=c6qGS62gMShp0cVl-1",
+        live: "https://www.figma.com/design/oMn0tgewdNmm2LODhn9FYj/Novotel---Hotel-Mgmt-Sys?node-id=0-1&t=c6qGS62gMShp0cVl-1",
+        images: ["images/projects/novotel.png"]
+    },
+    {
+        id: "creative-academy",
+        title: "Creative Academy – LMS System",
+        short: "A structured Learning Management System for digital education.",
+        long: "Designed a scalable LMS platform including course management, student dashboards, progress tracking, and interactive learning modules with intuitive navigation.",
+        category: "UI/UX",
+        tech: ["Figma", "LMS Design", "User Journey Mapping", "Dashboard UI"],
+        repo: "https://www.figma.com/design/mts7ZzQefExGoRyr8ETsI4/CreativeAcademy?node-id=0-1&t=SZgh7qXyUKizDslB-1",
+        live: "https://www.figma.com/design/mts7ZzQefExGoRyr8ETsI4/CreativeAcademy?node-id=0-1&t=SZgh7qXyUKizDslB-1",
+        images: ["images/projects/creative.png"]
+    }
 ];

@@ -20,6 +20,7 @@ export const filterProjects = (
 export const PROJECT_FILTERS = [
     "All",
     "Frontend",
+    "UI/UX",
     "Fullstack",
     "AI/ML",
     "Python",

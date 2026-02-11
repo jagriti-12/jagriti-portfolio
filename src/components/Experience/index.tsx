@@ -6,7 +6,7 @@ import TimelineItem from "./TimelineItem";
 import Script from "next/script";
 
 export default function ExperienceSection() {
-    const categories = ["All", "Frontend", "AI/ML", "UI/UX"];
+    const categories = ["All", "Frontend", "AI/ML", "UI/UX", "Project Manager"];
     const [selected, setSelected] = useState("All");
 
     const filtered =

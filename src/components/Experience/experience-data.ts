@@ -8,10 +8,25 @@ export interface ExperienceItem {
 }
 export const EXPERIENCE = [
     {
+        id: "uiux-bringletech",
+        company: "BringleTech Pvt. Ltd.",
+        role: "UI/UX Designer | UI/UX Trainer",
+        duration: "Dec 2025 – Present",
+        category: "UI/UX Designer",
+        description: [
+            "Designed intuitive, user-centered web and mobile interfaces using research-driven design principles and modern UI systems.",
+
+            "Conducted UX research including user flows, wireframes, and usability improvements to enhance product engagement and accessibility.",
+
+            "Delivered structured UI / UX training sessions, mentoring students and junior designers on design thinking, prototyping, and usability best practices.",
+            "Collaborated closely with developers and stakeholders to translate business requirements into scalable and visually cohesive design solutions."
+        ]
+    },
+    {
         id: "nxtservices-fullstack",
         company: "Nxt Services",
         role: "Full Stack Developer",
-        duration: "Dec 2024 – Present",
+        duration: "Dec 2024 – Dec 2025",
         category: "Frontend",
         description: [
             "Developing full-stack web apps using Next.js, Node.js, PostgreSQL and Tailwind.",
@@ -21,7 +36,20 @@ export const EXPERIENCE = [
             "Collaborated with design teams to ship responsive, modern interfaces."
         ]
     },
+    {
 
+        id: "medoc-pm",
+        company: "Medoc Pvt. Ltd.",
+        role: "Project Manager Intern",
+        duration: "Aug 2023 – May 2024",
+        category: "Project Manager",
+        description: [
+            "Coordinated cross - functional teams of developers and designers to ensure timely delivery of project milestones within defined scope and budget.",
+            "Assisted in sprint planning, requirement gathering, and progress tracking using Agile methodologies to improve workflow transparency.",
+            "Monitored project timelines, identified bottlenecks, and proactively mitigated risks to maintain delivery efficiency.",
+            "Communicated with stakeholders to gather feedback, document requirements, and align deliverables with business objectives."
+        ]
+    },
     {
         id: "grownity-uiux",
         company: "Grownity",
