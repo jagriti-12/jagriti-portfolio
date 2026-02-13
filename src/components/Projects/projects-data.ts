@@ -21,7 +21,7 @@ export const PROJECTS: Project[] = [
         category: "UI/UX",
         tech: ["Figma", "Design System", "User Flow", "Wireframing", "Prototyping"],
         repo: "https://www.figma.com/design/qXt3fXMZTObvrDUhMeW8Gk/CutsomerSide?node-id=0-1&p=f&t=XvhqAM8YEJU0II2E-0",
-        live: "https://www.figma.com/design/qXt3fXMZTObvrDUhMeW8Gk/CutsomerSide?node-id=0-1&p=f&t=XvhqAM8YEJU0II2E-0",
+        live: "https://www.figma.com/proto/qXt3fXMZTObvrDUhMeW8Gk/CutsomerSide?node-id=127-6268&t=ZSQrizXH2ehkV2TC-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=127%3A6268&show-proto-sidebar=1",
         images: ["images/projects/ride-safe.png"]
     },
     {
@@ -97,7 +97,7 @@ export const PROJECTS: Project[] = [
         category: "UI/UX",
         tech: ["Figma", "FinTech UX", "Mobile UI", "Data Visualization"],
         repo: "https://www.figma.com/design/CM2K5OvCCHU3Em6iMhIdhP/Finance-Management-Mobile-App-UI-UX-Kit-for-Budget-Tracker-Financial-Prototype-Design--Community-?node-id=7020-3430&t=OK4zxRU8LclBZ6fX-1",
-        live: "https://www.figma.com/design/CM2K5OvCCHU3Em6iMhIdhP/Finance-Management-Mobile-App-UI-UX-Kit-for-Budget-Tracker-Financial-Prototype-Design--Community-?node-id=7020-3430&t=OK4zxRU8LclBZ6fX-1",
+        live: "https://www.figma.com/proto/CM2K5OvCCHU3Em6iMhIdhP/FinTech-Personal-Project?node-id=7020-3430&p=f&t=GUxDutbQHsUoyBa3-0&scaling=min-zoom&content-scaling=fixed&page-id=7020%3A3430&starting-point-node-id=7113%3A2955&show-proto-sidebar=1",
         images: ["images/projects/fintech.png"]
     },
     {
@@ -145,17 +145,6 @@ export const PROJECTS: Project[] = [
     //     images: ["images/projects/booking.png"]
     // },
     {
-        id: "ride-safe-trollx",
-        title: "Ride Safe | TrollX – Multi-App Ecosystem",
-        short: "A unified customer-side experience combining ride safety and social engagement apps.",
-        long: "Designed a combination ecosystem of three interconnected apps focusing on safe commuting and community engagement. Created seamless user flows, intuitive navigation systems, and scalable UI components ensuring consistency across platforms.",
-        category: "UI/UX",
-        tech: ["Figma", "Design System", "User Flow", "Wireframing", "Prototyping"],
-        repo: "https://www.figma.com/design/qXt3fXMZTObvrDUhMeW8Gk/CutsomerSide?node-id=0-1&p=f&t=XvhqAM8YEJU0II2E-0",
-        live: "https://www.figma.com/design/qXt3fXMZTObvrDUhMeW8Gk/CutsomerSide?node-id=0-1&p=f&t=XvhqAM8YEJU0II2E-0",
-        images: ["images/projects/ride-safe.png"]
-    },
-    {
         id: "legal-landing",
         title: "Legal Services – Single Landing Webpage",
         short: "A modern, conversion-focused legal services landing page.",
@@ -163,7 +152,7 @@ export const PROJECTS: Project[] = [
         category: "UI/UX",
         tech: ["Figma", "Landing Page Design", "Typography System", "Conversion UX"],
         repo: "https://www.figma.com/design/kCGasBumiF8t1xe7AA5p8q/AAS?node-id=117-860&t=QzmI9NhWTSZMcJU3-0",
-        live: "https://www.figma.com/design/kCGasBumiF8t1xe7AA5p8q/AAS?node-id=117-860&t=QzmI9NhWTSZMcJU3-0",
+        live: "https://www.figma.com/proto/kCGasBumiF8t1xe7AA5p8q/AAS?node-id=2-4&t=rBUuLuvtprrjwC4U-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A4&show-proto-sidebar=1",
         images: ["images/projects/legal.png"]
     },
     {
@@ -174,7 +163,7 @@ export const PROJECTS: Project[] = [
         category: "UI/UX",
         tech: ["Figma", "Healthcare UX", "Dashboard UI", "Information Architecture"],
         repo: "https://www.figma.com/design/K88D52ux2AMOk3C7whLar7/Pharma-Project?node-id=0-1&p=f&t=5Qw7Kqt9iM1jODPZ-0",
-        live: "https://www.figma.com/design/K88D52ux2AMOk3C7whLar7/Pharma-Project?node-id=0-1&p=f&t=5Qw7Kqt9iM1jODPZ-0",
+        live: "https://www.figma.com/proto/K88D52ux2AMOk3C7whLar7/Pharma-Project?node-id=3-413&t=NrP25rPtF7unnTrw-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=45%3A66",
         images: ["images/projects/pharma.png"]
     },
     {
@@ -185,7 +174,7 @@ export const PROJECTS: Project[] = [
         category: "UI/UX",
         tech: ["Figma", "Travel UX", "Booking Flow", "Micro-Interactions"],
         repo: "https://www.figma.com/design/fsQ9uUoNeGychwT99pkEvT/Ladakh?node-id=107-39&p=f&t=g0n7wTUA4LWCHma0-0",
-        live: "https://www.figma.com/design/fsQ9uUoNeGychwT99pkEvT/Ladakh?node-id=107-39&p=f&t=g0n7wTUA4LWCHma0-0",
+        live: "https://www.figma.com/proto/fsQ9uUoNeGychwT99pkEvT/Ladakh?node-id=107-40&t=5ME9W1LqA62putY3-0&scaling=min-zoom&content-scaling=fixed&page-id=107%3A39&starting-point-node-id=107%3A40",
         images: ["images/projects/ladakh.png"]
     },
     {
@@ -196,7 +185,7 @@ export const PROJECTS: Project[] = [
         category: "UI/UX",
         tech: ["Figma", "ERP UX", "Kanban System", "Dashboard Design"],
         repo: "https://www.figma.com/design/2jnO2T4bhikCCKAYOGENYr/Workly-Venture?node-id=28-217&t=7rL4k73sKUMC3v8K-1",
-        live: "https://www.figma.com/design/2jnO2T4bhikCCKAYOGENYr/Workly-Venture?node-id=28-217&t=7rL4k73sKUMC3v8K-1",
+        live: "https://www.figma.com/proto/2jnO2T4bhikCCKAYOGENYr/Workly-Venture?node-id=853-88204&p=f&t=CIkDoa4n8mjKTzVH-0&scaling=min-zoom&content-scaling=fixed&page-id=28%3A217&starting-point-node-id=853%3A88204",
         images: ["images/projects/workly.png"]
     },
     {
@@ -207,7 +196,7 @@ export const PROJECTS: Project[] = [
         category: "UI/UX",
         tech: ["Figma", "CRM System", "ERP UX", "Enterprise Dashboard"],
         repo: "https://www.figma.com/design/oMn0tgewdNmm2LODhn9FYj/Novotel---Hotel-Mgmt-Sys?node-id=0-1&t=c6qGS62gMShp0cVl-1",
-        live: "https://www.figma.com/design/oMn0tgewdNmm2LODhn9FYj/Novotel---Hotel-Mgmt-Sys?node-id=0-1&t=c6qGS62gMShp0cVl-1",
+        live: "https://www.figma.com/proto/oMn0tgewdNmm2LODhn9FYj/Novotel---Hotel-Mgmt-Sys?node-id=208-983&p=f&t=g5Asu8MJ02rDzdhg-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=208%3A983",
         images: ["images/projects/novotel.png"]
     },
     {
@@ -218,7 +207,7 @@ export const PROJECTS: Project[] = [
         category: "UI/UX",
         tech: ["Figma", "LMS Design", "User Journey Mapping", "Dashboard UI"],
         repo: "https://www.figma.com/design/mts7ZzQefExGoRyr8ETsI4/CreativeAcademy?node-id=0-1&t=SZgh7qXyUKizDslB-1",
-        live: "https://www.figma.com/design/mts7ZzQefExGoRyr8ETsI4/CreativeAcademy?node-id=0-1&t=SZgh7qXyUKizDslB-1",
+        live: "https://www.figma.com/proto/mts7ZzQefExGoRyr8ETsI4/CreativeAcademy?node-id=1-933&p=f&t=7NBRFUY9pDCBoDg2-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A933",
         images: ["images/projects/creative.png"]
     }
 ];
