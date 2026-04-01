@@ -21,12 +21,12 @@ export default function AboutSection() {
                     className="flex flex-col items-center gap-4"
                 >
                     {/* PHOTO */}
-                    <div className="w-80 h-80 md:w-96 md:h-96 rounded-3xl overflow-hidden 
+                    <div className="w-90 h-90 md:w-96 md:h-96 rounded-3xl overflow-hidden 
         shadow-lg border border-white/10 bg-neutral-900/20">
                         <img
-                            src="/images/profile/profile.jpg"
+                            src="/images/profile/image 2.jpeg"
                             alt="Jagriti"
-                            className="w-full h-full object-cover"
+                            className="w-full h-112 object-cover"
                         />
                     </div>
                     {/* EDUCATION BADGE */}
@@ -59,14 +59,14 @@ export default function AboutSection() {
 
                     <p className="text-slate-300 leading-relaxed">
                         I’m <span className="font-semibold text-yellow-200">Jagriti Sachdeva</span>, a
-                        Frontend Developer with a strong foundation in UI/UX design,
-                        data understanding, and AI-driven development.
-                        I recently completed my B.Tech in Computer Science Engineering from
+                        Frontend Developer with a strong foundation and hands on experience in UI/UX design at Bringletech Pvt. Ltd.,
+                        data understanding, and AI-driven design & development.
+                        Completed my B.Tech in Computer Science Engineering from
                         <i className="text-yellow-100"> Chandigarh University</i>.
                     </p>
 
                     <p className="mt-4 text-slate-400 leading-relaxed">
-                        I love crafting interfaces that balance aesthetics with functionality—
+                        I love crafting interfaces that balance aesthetics with functionality 
                         from interactive dashboards and smooth user flows to AI-powered tools
                         and data-driven visualizations. Outside development, I enjoy writing,
                         researching, exploring design patterns, and understanding how data
@@ -76,7 +76,7 @@ export default function AboutSection() {
                     {/* STATS */}
                     <div className="mt-8 grid grid-cols-3 gap-4">
                         <StatsCounter value={1} label="Years" />
-                        <StatsCounter value={12} label="Projects" />
+                        <StatsCounter value={20} label="Projects" />
                         <StatsCounter value={20} label="Certifications" />
                     </div>
 
