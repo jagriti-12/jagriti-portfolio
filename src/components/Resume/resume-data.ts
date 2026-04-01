@@ -12,7 +12,7 @@ export const RESUMES: ResumeItem[] = [
         id: "web-dev",
         role: "Fullstack Developer",
         short: "Skilled in React, Next.js, Tailwind, UI/UX & responsive development.",
-        file: "/resumes/Jagriti_FullstackDeveloper.pdf",
+        file: "/resumes/Jagriti_FullStackDeveloper.pdf",
         keywords: ["React", "Next.js", "Frontend Developer", "UI UX", "Web Developer Resume"]
     },
     {
