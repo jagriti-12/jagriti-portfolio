@@ -88,7 +88,7 @@ export const PROJECTS: Project[] = [
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Figma", "Responsive Design"],
     repo: "https://www.figma.com/proto/RsqKCRWW5f2cs664OBNgic/CXO-Designs?node-id=38-3&starting-point-node-id=38%3A3&scaling=scale-down-width&content-scaling=fixed",
     live: "https://cxosuites.com/",
-    images: ["images/projects/cxo-suites.png"]
+    images: ["images/projects/cxo.png"]
 },
 
     {
