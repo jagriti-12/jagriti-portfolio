@@ -8,10 +8,26 @@ export interface ExperienceItem {
 }
 export const EXPERIENCE = [
     {
+        id: "pm-bringletech",
+        company: "BringleTech Pvt. Ltd.",
+        role: "Project Manager",
+        duration: "Nov 2025 – Present",
+        category: "Project Manager",
+        description: [
+            "Managed end-to-end project execution, including requirement gathering, task planning, and sprint coordination across cross-functional teams.",
+
+            "Defined project workflows, timelines, and deliverables to ensure efficient resource utilization and on-time delivery.",
+
+            "Facilitated team collaboration and mentored junior members, improving productivity and adherence to best practices.",
+
+            "Worked closely with stakeholders and developers to translate business requirements into structured, scalable solutions."
+        ]
+    },
+    {
         id: "uiux-bringletech",
         company: "BringleTech Pvt. Ltd.",
         role: "UI/UX Designer | UI/UX Trainer",
-        duration: "Dec 2025 – Present",
+        duration: "May 2025 – Present",
         category: "UI/UX Designer",
         description: [
             "Designed intuitive, user-centered web and mobile interfaces using research-driven design principles and modern UI systems.",
@@ -26,7 +42,7 @@ export const EXPERIENCE = [
         id: "nxtservices-fullstack",
         company: "Nxt Services",
         role: "Full Stack Developer",
-        duration: "Dec 2024 – Dec 2025",
+        duration: "Dec 2024 – May 2025",
         category: "Frontend",
         description: [
             "Developing full-stack web apps using Next.js, Node.js, PostgreSQL and Tailwind.",

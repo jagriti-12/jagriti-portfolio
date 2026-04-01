@@ -15,7 +15,7 @@ export const TECH_STACK: TechItem[] = [
     { name: "CSS", category: "Frontend", icon: "/icons/css.svg" },
 
     // Backend
-    { name: "python", category: "Backend", icon: "/icons/python.svg" },
+    { name: "Python", category: "Backend", icon: "/icons/python.svg" },
     { name: "Node.js", category: "Backend", icon: "/icons/nodejs.svg" },
     { name: "Java", category: "Backend", icon: "/icons/java.svg" },
     { name: "JavaScript", category: "Backend", icon: "/icons/javascript.svg" },
@@ -41,7 +41,7 @@ export const TECH_STACK: TechItem[] = [
     { name: "Adobe XD", category: "UI/UX", icon: "/icons/adobexd.svg" },
     { name: "Prototyping", category: "UI/UX", icon: "/icons/prototype.svg" },
     { name: "Wireframing", category: "UI/UX", icon: "/icons/wireframe.svg" },
-    { name: "Adobe Creative", category: "UI/UX", icon: "/icons/adobecreative.svg" },
+    { name: "Webflow", category: "UI/UX", icon: "/icons/webflow.svg" },
     { name: "Illustrations", category: "UI/UX", icon: "/icons/graphic.svg" },
     { name: "Framer", category: "UI/UX", icon: "/icons/framer.svg" },
 
@@ -49,12 +49,13 @@ export const TECH_STACK: TechItem[] = [
     { name: "Git", category: "Tools", icon: "/icons/git.svg" },
     { name: "GitHub", category: "Tools", icon: "/icons/github.svg" },
     { name: "Vercel", category: "Tools", icon: "/icons/vercel.svg" },
+    { name: "Jira", category: "Tools", icon: "/icons/jira.svg" },
     { name: "Docker", category: "Tools", icon: "/icons/docker.svg" },
-    { name: "Xampp", category: "Tools", icon: "/icons/xampp.svg" },
+    { name: "XAMPP", category: "Tools", icon: "/icons/xampp.svg" },
     { name: "Postman", category: "Tools", icon: "/icons/postman.svg" },
 
     // Databases (optional category)
-    { name: "Mongo DB", category: "Databases", icon: "/icons/mongodb.svg" },
-    { name: "Postgre SQL", category: "Databases", icon: "/icons/postgresql.svg" },
+    { name: "MongoDB", category: "Databases", icon: "/icons/mongodb.svg" },
+    { name: "PostgreSQL", category: "Databases", icon: "/icons/postgresql.svg" },
     { name: "MySQL", category: "Databases", icon: "/icons/mysql.svg" },
 ];
