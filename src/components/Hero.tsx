@@ -20,11 +20,11 @@ export default function Hero() {
                         transition={{ delay: 0.15 }}
                         className="mt-4 text-lg text-[var(--text-secondary)] max-w-xl"
                     >
-                        <strong>Frontend Developer • UI/UX Designer • Data Analyst</strong>
+                        <strong>UI/UX Designer • Frontend Developer • Data Analyst</strong>
                         <br /><br />
-                        Recent Computer Science graduate from
-                        <i> <u>Chandigarh University</u></i> exploring the realm of
-                    <strong> Frontend Development, User Experience Design, and Data Insights.</strong>
+                        Computer Science graduate from
+                        <i> <u>Chandigarh University</u></i> with professional experience in building scalable 
+                    <strong> web applications, designing intuitive user experiences, and delivering data-driven solutions.</strong>
                 </motion.p>
                 {/* CTA Buttons */}
                 <div className="mt-6 flex gap-3">
