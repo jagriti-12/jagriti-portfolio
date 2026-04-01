@@ -24,9 +24,9 @@ export default function AboutSection() {
                     <div className="w-90 h-90 md:w-96 md:h-96 rounded-3xl overflow-hidden 
         shadow-lg border border-white/10 bg-neutral-900/20">
                         <img
-                            src="/images/profile/image 2.jpeg"
+                            src="/images/profile/profilee.jpeg"
                             alt="Jagriti"
-                            className="w-full h-112 object-cover"
+                            className="w-full h-full object-cover"
                         />
                     </div>
                     {/* EDUCATION BADGE */}
