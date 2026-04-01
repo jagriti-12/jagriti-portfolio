@@ -25,6 +25,73 @@ export const PROJECTS: Project[] = [
         images: ["images/projects/ride-safe.png"]
     },
     {
+    id: "billing-system",
+    title: "Billing & Inventory Management System",
+    short: "A desktop-based billing system with real-time inventory tracking and automated billing workflows.",
+    long: "A full-featured billing and inventory management system built using Electron and React, enabling real-time stock tracking, customer ledger management, and automated barcode generation. Designed to streamline billing operations, reduce manual errors, and provide efficient transaction handling with a user-friendly interface.",
+    category: "Fullstack",
+    tech: ["React", "Electron", "Node.js", "MySQL"],
+    repo: "", 
+    live: "", 
+    images: ["images/projects/Billingsystem.png"]
+},
+    {
+    id: "amc-tracker",
+    title: "AMC Tracking & Task Management System",
+    short: "A CRM-like platform for tracking AMC contracts, service hours, and team tasks in real time.",
+    long: "A scalable AMC (Annual Maintenance Contract) tracking system designed to manage service hours, contracts, and task assignments with real-time updates. Built using modern Cloudflare infrastructure, the system enables efficient resource tracking, workflow management, and improved team coordination through structured dashboards and live data synchronization.",
+    category: "Fullstack",
+    tech: ["Next.js", "TypeScript", "Cloudflare Workers", "Durable Objects", "D1", "R2", "Vectorize", "RunPod"],
+    repo: "",
+    live: "",
+    images: ["images/projects/amc.png"]
+},
+    {
+    id: "website-health-tracker",
+    title: "Website Health & Performance Analyzer",
+    short: "A performance analytics platform to evaluate SEO, accessibility, and page metrics with comparative insights.",
+    long: "A web-based analytics platform designed to measure and analyze website performance, including page weight, SEO scores, and accessibility metrics using Lighthouse-based evaluation. Features comparative dashboards for benchmarking multiple websites, enabling data-driven optimization and performance improvements with scalable analysis workflows.",
+    category: "Full Stack",
+    tech: ["Next.js", "TypeScript", "Cloudflare Workers", "Durable Objects", "D1", "R2", "Vectorize", "RunPod"],
+    repo: "",
+    live: "",
+    images: ["images/projects/webhealth.png"]
+},
+{
+    id: "bringle-crm",
+    title: "Enterprise CRM Dashboard (UI/UX Design)",
+    short: "Designed a scalable CRM dashboard for managing users, workflows, and business operations.",
+    long: "Designed and prototyped an enterprise-level CRM dashboard for internal business operations, focusing on user management, workflow tracking, and administrative control. Created structured user flows, wireframes, and high-fidelity designs in Figma, ensuring usability, scalability, and consistency across the platform. Collaborated with stakeholders to translate business requirements into intuitive, data-driven interfaces aligned with modern design systems.",
+    category: "UI/UX",
+    tech: ["Figma", "Design Systems", "Wireframing", "Prototyping", "User Flows"],
+    repo: "",
+    live: "https://www.figma.com/proto/WoLZUWJ5iK5uuTSPd1pqEY/SuperAdmin-Dashboard?node-id=1-2&p=f&t=Tjx3KyOvd6FqhjWP-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=28%3A751",
+    images: ["images/projects/crm.png"]
+},
+{
+    id: "ss-engineering",
+    title: "S & S Engineering – Industrial Website Design",
+    short: "Designed and developed a modern business website for an aerospace manufacturing company.",
+    long: "Designed and developed a responsive corporate website for S & S Engineering, a manufacturing company specializing in aerospace components. Focused on creating a clean, professional digital presence to showcase services, capabilities, and product offerings. Implemented structured layouts, intuitive navigation, and performance-optimized pages to improve user engagement and credibility for industrial clients.",
+    category: "UI-UX",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Figma", "Responsive Design"],
+    repo: "https://www.figma.com/proto/Vc4MFHw0yJFEnyo8kUjd3p/S---S-Website?node-id=64-185&starting-point-node-id=64%3A185&scaling=scale-down-width&content-scaling=fixed&t=LJAv7CnjaBPRC21g-1",
+    live: "https://sulendrasons.com/",
+    images: ["images/projects/ss.png"]
+},
+{
+    id: "cxo-suites",
+    title: "CXO Suites – Co-working Space Website",
+    short: "A modern business website for a co-working space, focused on conversions and user engagement.",
+    long: "Designed and developed a high-conversion website for CXO Suites, a premium co-working space brand. Focused on creating a clean, modern interface to showcase workspace offerings, amenities, and booking flows. Implemented responsive design, optimized page performance, and structured content to enhance user experience and drive inquiries for workspace solutions.",
+    category: "Full Stack / UI-UX",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Figma", "Responsive Design"],
+    repo: "https://www.figma.com/proto/RsqKCRWW5f2cs664OBNgic/CXO-Designs?node-id=38-3&starting-point-node-id=38%3A3&scaling=scale-down-width&content-scaling=fixed",
+    live: "https://cxosuites.com/",
+    images: ["images/projects/cxo-suites.png"]
+},
+
+    {
         id: "employee-dashboard",
         title: "Employee Task Management Dashboard",
         short: "A React + Node.js dashboard for managing tasks, teams & analytics.",
@@ -151,8 +218,8 @@ export const PROJECTS: Project[] = [
         long: "Designed a clean and authoritative single-page website for legal services with structured information hierarchy, trust-building elements, and optimized call-to-action placements for higher engagement.",
         category: "UI/UX",
         tech: ["Figma", "Landing Page Design", "Typography System", "Conversion UX"],
-        repo: "https://www.figma.com/design/kCGasBumiF8t1xe7AA5p8q/AAS?node-id=117-860&t=QzmI9NhWTSZMcJU3-0",
-        live: "https://www.figma.com/proto/kCGasBumiF8t1xe7AA5p8q/AAS?node-id=2-4&t=rBUuLuvtprrjwC4U-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A4&show-proto-sidebar=1",
+        live: "https://ascendantadvisory.in/",
+        repo: "https://www.figma.com/proto/kCGasBumiF8t1xe7AA5p8q/AAS?node-id=2-4&t=rBUuLuvtprrjwC4U-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A4&show-proto-sidebar=1",
         images: ["images/projects/legal.png"]
     },
     {
