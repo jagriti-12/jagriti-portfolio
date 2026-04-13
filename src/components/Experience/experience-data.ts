@@ -28,7 +28,7 @@ export const EXPERIENCE = [
         company: "BringleTech Pvt. Ltd.",
         role: "UI/UX Designer | UI/UX Trainer",
         duration: "May 2025 – Present",
-        category: "UI/UX Designer",
+        category: "UI/UX",
         description: [
             "Designed intuitive, user-centered web and mobile interfaces using research-driven design principles and modern UI systems.",
 
