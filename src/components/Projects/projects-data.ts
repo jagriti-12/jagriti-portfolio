@@ -35,28 +35,28 @@ export const PROJECTS: Project[] = [
     live: "", 
     images: ["images/projects/Billingsystem.png"]
 },
-    {
-    id: "amc-tracker",
-    title: "AMC Tracking & Task Management System",
-    short: "A CRM-like platform for tracking AMC contracts, service hours, and team tasks in real time.",
-    long: "A scalable AMC (Annual Maintenance Contract) tracking system designed to manage service hours, contracts, and task assignments with real-time updates.",
-    category: "Fullstack",
-    tech: ["Next.js", "TypeScript", "Cloudflare Workers", "Durable Objects", "D1", "R2", "Vectorize", "RunPod"],
-    repo: "",
-    live: "",
-    images: ["images/projects/amc.png"]
-},
-    {
-    id: "website-health-tracker",
-    title: "Website Health & Performance Analyzer",
-    short: "A performance analytics platform to evaluate SEO, accessibility, and page metrics with comparative insights.",
-    long: "A web-based analytics platform designed to measure and analyze website performance, including page weight, SEO scores, and accessibility metrics using Lighthouse-based evaluation.",
-    category: "Full Stack",
-    tech: ["Next.js", "TypeScript", "Cloudflare Workers", "Durable Objects", "D1", "R2", "Vectorize", "RunPod"],
-    repo: "",
-    live: "",
-    images: ["images/projects/webhealth.png"]
-},
+//     {
+//     id: "amc-tracker",
+//     title: "AMC Tracking & Task Management System",
+//     short: "A CRM-like platform for tracking AMC contracts, service hours, and team tasks in real time.",
+//     long: "A scalable AMC (Annual Maintenance Contract) tracking system designed to manage service hours, contracts, and task assignments with real-time updates.",
+//     category: "Fullstack",
+//     tech: ["Next.js", "TypeScript", "Cloudflare Workers", "Durable Objects", "D1", "R2", "Vectorize", "RunPod"],
+//     repo: "",
+//     live: "",
+//     images: ["images/projects/amc.png"]
+// },
+//     {
+//     id: "website-health-tracker",
+//     title: "Website Health & Performance Analyzer",
+//     short: "A performance analytics platform to evaluate SEO, accessibility, and page metrics with comparative insights.",
+//     long: "A web-based analytics platform designed to measure and analyze website performance, including page weight, SEO scores, and accessibility metrics using Lighthouse-based evaluation.",
+//     category: "Full Stack",
+//     tech: ["Next.js", "TypeScript", "Cloudflare Workers", "Durable Objects", "D1", "R2", "Vectorize", "RunPod"],
+//     repo: "",
+//     live: "",
+//     images: ["images/projects/webhealth.png"]
+// },
 {
     id: "bringle-crm",
     title: "Enterprise CRM Dashboard (UI/UX Design)",
