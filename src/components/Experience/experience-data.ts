@@ -11,7 +11,7 @@ export const EXPERIENCE = [
         id: "pm-bringletech",
         company: "BringleTech Pvt. Ltd.",
         role: "Project Manager",
-        duration: "Nov 2025 – Present",
+        duration: "Nov 2025 – April 2026",
         category: "Project Manager",
         description: [
             "Managed end-to-end project execution, including requirement gathering, task planning, and sprint coordination across cross-functional teams.",
@@ -27,7 +27,7 @@ export const EXPERIENCE = [
         id: "uiux-bringletech",
         company: "BringleTech Pvt. Ltd.",
         role: "UI/UX Designer | UI/UX Trainer",
-        duration: "May 2025 – Present",
+        duration: "May 2025 – April 2026",
         category: "UI/UX",
         description: [
             "Designed intuitive, user-centered web and mobile interfaces using research-driven design principles and modern UI systems.",
